@@ -1,0 +1,57 @@
+.bloc-now {
+	&-title {
+		margin-bottom: 26px;
+	}
+	&-list {
+
+	}
+}
+.card {
+	border: none;
+	height: 100%;
+	&-img-top {
+		height: 350px;
+		object-fit: contain;
+	}
+	&-body {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&-title {
+		color: #120E00;
+		text-decoration: none;
+		&:hover {
+			color: #120E00;
+		}
+	}
+	&-text {
+		line-height: 24px;
+		color: #5F5F5F;
+		margin-bottom: auto;
+	}
+	&-price {
+		line-height: 38px;
+		color: #120E00;
+		padding-right: 10px;
+	}
+
+	& .carousel {
+		&:hover {
+			& .carousel-control-next,
+			& .carousel-control-prev {
+				opacity: 1;
+			}
+		}
+		& .carousel-control-next,
+		& .carousel-control-prev {
+			opacity: 0;
+		}
+		& .carousel-control-prev-icon,
+		& .carousel-control-next-icon {
+			background-color: rgba(1, 1, 1, 0.4);
+			border-radius: 50%;
+			border: 5px solid transparent;
+		}
+	}
+}

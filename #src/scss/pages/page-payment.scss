@@ -1,0 +1,150 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_footer";
+@import "_default";
+@import "_modal";
+@import "_select2";
+
+
+.cart-lots {
+	border-radius: 4px;
+	border: 1px solid #B7B6B2;
+	padding: 20px 20px 55px;
+	&-cost {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		grid-gap: 8px;
+		margin-bottom: 20px;
+		& span {
+			&:first-child {
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:last-child {
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	&-shipping {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		grid-gap: 8px;
+		padding-bottom: 32px;
+		border-bottom: 1px solid #B7B6B2;
+		margin-bottom: 32px;
+		& span {
+			&:first-child {
+				flex: 0 1 100%;
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:nth-child(2) {
+				flex: 0 1 calc(65% - 4px);
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				font-weight: 700;
+				line-height: 150%;
+			}
+			&:last-child {
+				flex: 0 1 calc(35% - 4px);
+				text-align: right;
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	&-total-cost {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		grid-gap: 8px;
+		margin-bottom: 32px;
+		& span {
+			&:first-child {
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:last-child {
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	& > button.btn {
+		width: 100%;
+	}
+}
+.radio {
+	&-wrapper {
+
+	}
+	&-input {
+		display: none;
+		&:checked {
+			& + .radio-label {
+				cursor: auto;
+				&:before {
+
+				}
+				&:after {
+					background-color: #2D7158;
+				}
+			}
+		}
+	}
+	&-label {
+		position: relative;
+		padding-left: 35px;
+		cursor: pointer;
+		margin-bottom: 32px;
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		grid-gap: 12px;
+		& span {
+			color: #120E00;
+			font-size: 1.25rem;
+			& > span {
+				margin-left: 12px;
+			}
+			& .sub-text {
+				color: #5F5F5F;
+				font-size: 1.125rem;
+				display: block;
+				margin-left: 0;
+			}
+		}
+		&:before {
+			width: 24px;
+			height: 24px;
+			top:calc(50% - 12px);
+			left: 0;
+			border: 1px solid #5F5F5F;
+			border-radius: 50%;
+		}
+		&:after {
+			width: 16px;
+			height: 16px;
+			top:calc(50% - 8px);
+			left: 4px;
+			background-color: transparent;
+			border-radius: 50%;
+		}
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+		}
+	}
+}

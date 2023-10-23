@@ -1,0 +1,221 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_footer";
+@import "_default";
+@import "_modal";
+@import "_select2";
+
+
+.cart-lots {
+	border-radius: 4px;
+	border: 1px solid #B7B6B2;
+	padding: 20px 20px 55px;
+	@media screen and (max-width: 768px) {
+		margin-top: 24px;
+	}
+		& .cart-lots-shipping.disabled {
+			& > span:last-child {
+				color: #B7B6B2;
+			}
+		}
+		& .cart-lots-total-cost.disabled {
+			& > span:last-child {
+				color: #B7B6B2;
+			}
+		}
+		& .cart-lots-cost.disabled {
+			& > span:last-child {
+				color: #B7B6B2;
+			}
+		}
+
+	&-cost {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		grid-gap: 8px;
+		margin-bottom: 20px;
+		& span {
+			&:first-child {
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:last-child {
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	&-shipping {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		grid-gap: 8px;
+		padding-bottom: 32px;
+		border-bottom: 1px solid #B7B6B2;
+		margin-bottom: 32px;
+		& span {
+			&:first-child {
+				flex: 0 1 100%;
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:nth-child(2) {
+				flex: 0 1 calc(65% - 4px);
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				font-weight: 700;
+				line-height: 150%;
+			}
+			&:last-child {
+				flex: 0 1 calc(35% - 4px);
+				text-align: right;
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	&-total-cost {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		grid-gap: 8px;
+		margin-bottom: 32px;
+		& span {
+			&:first-child {
+				color: #5F5F5F;
+				font-size: 1.25rem;
+				line-height: 150%;
+			}
+			&:last-child {
+				color: #120E00;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+}
+.btn.btn-success:disabled {
+	opacity: 1;
+}
+.inputs-wrapper {
+	& .btn.btn-input.dropdown-toggle.show,
+	& .btn.btn-input.dropdown-toggle.active,
+	& .btn.btn-input.dropdown-toggle {
+		padding: 0.68rem .125rem 0.68rem 1.25rem;
+		border: 1px solid #A8891A;
+		font-size: 20px;
+		line-height: 150%;
+		color: #5F5F5F;
+		@media screen and (max-width: 768px) {
+			padding: 0.68rem;
+		}
+		&::placeholder {
+			font-size: 20px;
+			line-height: 150%;
+			color: #5F5F5F;
+		}
+		&:hover {
+			border: 1px solid #A8891A;
+			background-color: transparent !important;
+		}
+		&:focus {
+			background-color: transparent !important;
+			border-color: #A8891A;
+			box-shadow: 0 0 0 0.25rem rgba(168, 137, 26, 0.25);
+		}
+		&:active {
+			background-color: transparent !important;
+		}
+		&:after {
+			vertical-align: -0.145em;
+		}
+		& ~ .inp {
+			padding: 0.68rem 1rem 0.68rem .5rem;
+		}
+	}
+}
+.inp {
+	padding: 0.68rem 1.25rem;
+	@media screen and (max-width: 768px) {
+		padding: 0.68rem;
+	}
+}
+.delivery {
+	& .h2-pf {
+		margin-bottom: 32px;
+	}
+	&-text {
+		color: #120E00;
+		font-size: 1.5rem;
+		margin-bottom: 0;
+	}
+	& button.btn.btn-success {
+		width: 100%;
+	}
+	& .col-12.col-md-8.col-xl-9 > .row > div:nth-child(2){
+		visibility: hidden;
+		&.active {
+			visibility: visible;
+		}
+		& label {
+			display: none;
+		}
+	}
+
+}
+.form-check-input {
+	display: none;
+	&:checked + label:before {
+		display: block;
+	}
+	&:checked + label:after {
+	}
+}
+.form-check {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 12px;
+	}
+}
+.form-check-label {
+	padding-left: 40px;
+	color: #120E00;
+	font-size: 1.25rem;
+	line-height: 165%;
+	position: relative;
+	cursor: pointer;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+	}
+	&:after {
+		width: 22px;
+		height: 22px;
+		display: block;
+		border-radius: 2px;
+		border: 1px solid #2D7158;
+		top: calc(50% - 11px);
+		left: 0;
+		background-color: transparent;
+	}
+	&:before {
+		display: none;
+		width: 8px;
+		height: 12px;
+		transform: rotateZ(40deg);
+		border-bottom: 2px solid #2D7158;
+		border-right: 2px solid #2D7158;
+		top: calc(50% - 9px);
+		left: 7px;
+		z-index: 10;
+	}
+}

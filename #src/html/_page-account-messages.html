@@ -1,0 +1,94 @@
+<div class="container-xxl">
+	<div class="row personal-data">
+		<div class="col-12">
+			<div class="d-flex justify-content-center">
+				<div class="btn-group personal-data-links" role="group" aria-label="Default button group">
+					<a href="./page-account-personal-data.html" class="btn btn-outline-success active">Personal data</a>
+					<a href="#" class="btn btn-outline-success">Won Items</a>
+					<a href="#" class="btn btn-outline-success">Messages</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="list-messages">
+				<div class="list-messages-header">
+					<div class="list-messages-header-item">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="checkAllMessages"
+								   id="checkAllMessages" required>
+							<label class="form-check-label" for="checkAllMessages">
+								Check all
+							</label>
+						</div>
+					</div>
+					<div class="list-messages-header-item">
+						<div class="btn-wrapper">
+							<button class="btn" type="button">Mark as read</button>
+							<button class="btn" type="button">Delete</button>
+						</div>
+					</div>
+				</div>
+				<div class="list-messages-body">
+<!--					якщо немає повідомлень, то відображаєтся цей div-->
+<!--					<div class="no-conversations">No conversations here!</div>-->
+<!--					якщо нове повідомлення то у нього є клас new як користувач його помітив прочитаним цей клас зникає-->
+					<div class="list-messages-body-item">
+						<div class="item-check">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="checkAllMessages1"
+									   id="checkAllMessages1" required>
+								<label class="form-check-label" for="checkAllMessages1"></label>
+							</div>
+						</div>
+						<div class="item-img">
+							<a href="#">
+	<!--							якщо немає лота тоді стоїть іконка -->
+								<img src="./img/test.png" alt="">
+	<!--							<i class="bi bi-person-circle"></i>-->
+							</a>
+						</div>
+						<div class="item-name">
+							<a title="Lot #1 - Saul RABINO ( 1892-1969 ) Ukraine" href="#">Lot #1 - Saul RABINO ( 1892-1969 ) Ukraine</a>
+							<p>Admin Support</p>
+						</div>
+						<div class="item-text">
+							<a href="#">This text was created to test this feature. </a>
+						</div>
+						<div class="item-data">
+							<time>2:51 PM</time>
+						</div>
+					</div>
+					<div class="list-messages-body-item new">
+						<div class="item-check">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="checkAllMessages2"
+									   id="checkAllMessages2" required>
+								<label class="form-check-label" for="checkAllMessages2"></label>
+							</div>
+						</div>
+						<div class="item-img">
+							<a href="#">
+	<!--							якщо немає лота тоді стоїть іконка -->
+	<!--							<img src="./img/test.png" alt="">-->
+								<i class="bi bi-person-circle"></i>
+							</a>
+						</div>
+						<div class="item-name">
+							<a title="Lot #1 - Saul RABINO ( 1892-1969 ) Ukraine" href="#">Lot #1 - Saul RABINO ( 1892-1969 ) Ukraine</a>
+							<p>Admin Support</p>
+						</div>
+						<div class="item-text">
+							<a href="#">This text was created to test this feature. </a>
+						</div>
+						<div class="item-data">
+							<time>2:51 PM</time>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			@@include('./_pagination.html')
+		</div>
+	</div>
+</div>

@@ -1,0 +1,168 @@
+<div class="container-xxl">
+	<div class="row delivery">
+		<div class="col-12">
+			<h2 class="h2-pf">
+				Delivery
+			</h2>
+			<p class="delivery-text">
+				Please enter the delivery details
+			</p>
+		</div>
+		<div class="col-12 mt-3">
+			<form class="row align-items-start " action="#">
+				<div class="col-12 col-md-8 col-xl-9">
+					<div class="row">
+						<!-- по вибору чекбокса з'являється поле з компанією чи пропадає -->
+						<div class="col-md-3 form-check">
+							<input class="form-check-input" type="checkbox" name="business" id="business">
+							<label class="form-check-label" for="business">
+								Business
+							</label>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="companyName" class="form-label"></label>
+							<input type="text" class="form-control inp " id="companyName"
+								   placeholder="Company name">
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer01" class="form-label"></label>
+							<input type="text" class="form-control inp " id="validationServer01"
+								   placeholder="First name" required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer02" class="form-label"></label>
+							<input type="text" class="form-control inp " id="validationServer02" placeholder="Last name"
+								   required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer03" class="form-label"></label>
+							<input type="email" class="form-control inp " id="validationServer03" placeholder="Email"
+								   required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer09" class="form-label"></label>
+							<div class="input-group mb-4">
+								<button class="btn btn-input dropdown-toggle" type="button" data-bs-toggle="dropdown">+
+									38
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">+ 38</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+									<li><a class="dropdown-item" href="#">Separated link</a></li>
+								</ul>
+								<input type="text" class="form-control  inp " id="validationServer09"
+									   placeholder="(000) 000 00 00" required>
+							</div>
+						</div>
+						<div class="col-12">
+							<hr>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer04" class="form-label"></label>
+							<select class="select2-wrapper form-control  inp" name="Country" id="validationServer04"
+									required>
+								<option value="">- -</option>
+								<option>Ukraine</option>
+								<option>France</option>
+								<option>Germany</option>
+							</select>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer05" class="form-label"></label>
+							<input type="text" class="form-control  inp " id="validationServer05"
+								   placeholder="Full adress" required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer06" class="form-label"></label>
+							<input type="text" class="form-control  inp " id="validationServer06"
+								   placeholder="State/Provence" required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer07" class="form-label"></label>
+							<input type="text" class="form-control  inp " id="validationServer07" placeholder="City"
+								   required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-md-6 inputs-wrapper">
+							<label for="validationServer08" class="form-label"></label>
+							<input type="text" class="form-control  inp " id="validationServer08" placeholder="Zip code"
+								   required>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+						</div>
+						<div class="col-12">
+							<hr>
+						</div>
+						<div class="col-md-9 form-check">
+							<input class="form-check-input" type="checkbox" name="business" id="receiveNews">
+							<label class="form-check-label" for="receiveNews">
+								I wish to receive Art Torg news on my e-mail
+							</label>
+						</div>
+						<div class="col-md-3 ">
+							<!-- пока вся форма не заповнена стоїть атрибут disabled -->
+							<button class="btn btn-success" disabled type="submit">Continue</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-xl-3">
+					<div class="cart-lots">
+<!--					у цих 4х блоках нижце може додаватись класс disabled для зміни кольору на заблокований у ціні і у 4тому це атрибут -->
+						<div class="cart-lots-cost">
+							<span>
+								Cost of lots:
+							</span>
+							<span>
+								496 000 €
+							</span>
+						</div>
+						<div class="cart-lots-shipping disabled">
+							<span>
+								Shipping to:
+							</span>
+							<span>
+								EU, Russia, Middle Assia - DHL
+							</span>
+							<span>
+								415 €
+							</span>
+						</div>
+						<div class="cart-lots-total-cost disabled">
+							<span>
+								Total cost:
+							</span>
+							<span>
+								496 415 €
+							</span>
+						</div>
+						<button class="btn btn-success" disabled type="submit">
+							Go to payment
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

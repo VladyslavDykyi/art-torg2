@@ -1,0 +1,91 @@
+<header>
+	<nav class="navbar navbar-expand-lg flex-column bg-light">
+		<div class="container justify-content-center">
+			<p class="link-support">
+				Contacts: <a class="nav-item text-decoration-none" href="mailto:support@art-torg.com">support@art-torg.com</a>
+				/ <a class="nav-item text-decoration-none" href="tel:+420234280621">+420 234 280 621</a>
+			</p>
+		</div>
+		<div class="container-xxl">
+			<a class="navbar-brand" href="./page-home.html">
+				<img src="./img/img.png" alt="Bootstrap" width="178" height="79">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarScroll">
+				<!-- 16.09.23 зверни увагу на класи у списку нижче -->
+				<ul class="navbar-nav me-auto my-2 my-lg-0 align-items-baseline" style="--bs-scroll-height: 100px;">
+				<!-- 16.09.23 зверни увагу на класи у списку вище -->
+					<li class="nav-item">
+						<a class="nav-link  buy-now" aria-current="page" href="./page-buy-now.html">Buy now</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./page-home.html">Home</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+						   aria-expanded="false">
+							Auctions
+						</span>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="./page-current-auction.html">Upcoming auctions</a></li>
+							<li><a class="dropdown-item" href="./page-past-auctions.html">Past auctions</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./page-services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./page-blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./page-about-us.html">About us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./page-contact-us.html">Contact us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./page-FAQ.html">FAQ</a>
+					</li>
+					<!-- 19.07.2023 тут вирізав випадашку язиків -->
+				</ul>
+				<ul class="navbar-nav align-items-center">
+					<!-- 19.07.2023 тут вставив випадашку язиків -->
+					<li class="nav-item dropdown">
+						<span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							EN
+						</span>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">EN</a></li>
+							<li><a class="dropdown-item" href="#">UK</a></li>
+							<li><a class="dropdown-item" href="#">FR</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<!-- 01.08.2023 додав клас bag -->
+						<a class="nav-link bag mx-3" href="#">
+							<i class="bi bi-bag"></i>
+							<!-- додав span для лічильника якщо елементів 0 його треба видалити-->
+							<span class="bag-count">2</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle6" type="button">Sing Up</button>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link entered mx-3" href="./page-account-personal-data.html">
+							<span>
+								Maryna
+							</span>
+							<i class="bi bi-person-circle"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>

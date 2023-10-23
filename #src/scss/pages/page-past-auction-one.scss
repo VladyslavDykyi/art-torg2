@@ -1,0 +1,22 @@
+@import "_default";
+@import "_header";
+@import "_breadcrumb";
+@import "_page-current-auction-timer";
+@import "_page-current-auction-autor";
+@import "_component-cart+form+past";
+@import "_pagination";
+@import "_footer";
+@import "_select2";
+@import "_modal";
+.auction-status {
+	margin: 16px 0 32px;
+	&-info {
+		border-radius: 4px;
+		border: 1px solid #B7B6B2;
+		padding: 16px 30px 40px 16px;
+		@media screen and (max-width: 992px) {
+			border-bottom: 1px solid #B7B6B2;
+			border-radius: 4px;
+		}
+	}
+}

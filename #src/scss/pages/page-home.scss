@@ -1,0 +1,151 @@
+@import "_header";
+@import "_page-list-auc";
+@import "_block-now";
+@import "_component-contact-us";
+@import "_footer";
+@import "_default";
+@import "_select2";
+@import "_modal";
+
+.wrapper {
+	margin-top: 25px;
+}
+.link-arrow {
+
+	&:hover {
+		& path {
+			fill: #409B7A;
+		}
+	}
+	&:active {
+		& path {
+			fill: #29654F;
+		}
+	}
+}
+.carousel-main {
+	padding-bottom: 45px;
+	border-bottom: 2px solid #B7B6B2;
+	margin-bottom: 24px;
+	position: relative;
+	& .carousel-item {
+		@media screen and (max-width: 768px) {
+			height: 350px;
+		}
+		& > picture {
+			position: relative;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: "";
+				display: block;
+				height: 100%;
+				width: 100%;
+				background: linear-gradient(360deg, rgba(10, 10, 10, 0.00) 65.63%, rgba(10, 10, 10, 0.40) 100%);
+			}
+			& img {
+				@media screen and (max-width: 768px) {
+					height: 350px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	& .carousel-indicators [data-bs-target].active {
+		background-color: #2D7158;
+	}
+	& .carousel-indicators [data-bs-target] {
+		background-color: #B7B6B2;
+		opacity: 1;
+		height: 5px;
+		width: 24px;
+		margin-right: 6px;
+		margin-left: 6px;
+	}
+	& .carousel-caption {
+		bottom: 0;
+		padding-bottom: 0;
+		&-title {
+			margin-top: 45px;
+			@media screen and (max-width: 992px) {
+				margin-top: 0;
+			}
+			& h2 {
+				font-size: 36px;
+				font-family: 'Playfair Display', serif;
+				font-weight: 600;
+				color: #FFF;
+				@media screen and (max-width: 992px) {
+					font-size: 24px;
+				}
+				@media screen and (max-width: 576px) {
+					font-size: 16px;
+				}
+			}
+			& p {
+				font-size: 32px;
+				font-family: 'Playfair Display', serif;
+				font-weight: 500;
+				color: #FFF;
+				@media screen and (max-width: 992px) {
+					font-size: 20px;
+				}
+				@media screen and (max-width: 576px) {
+					font-size: 14px;
+				}
+			}
+		}
+		& > .btn.btn-success.my-3 {
+			margin-bottom: 50px !important;
+			@media screen and (max-width: 1040px) {
+				margin-bottom: 80px !important;
+			}
+			@media screen and (max-width: 580px) {
+				margin-bottom: 50px !important;
+			}
+			@media screen and (max-width: 425px) {
+				padding: 0.532rem 0.5rem 0.532rem;
+				font-size: 17px;
+			}
+		}
+	}
+	& .carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='27' cy='27' r='27' transform='matrix(-1 0 0 1 54 0)' fill='rgba(254, 254, 254, 0.3)' /%3e%3cpath d='M7.29289 26.2929C6.90237 26.6834 6.90237 27.3166 7.29289 27.7071L13.6569 34.0711C14.0474 34.4616 14.6805 34.4616 15.0711 34.0711C15.4616 33.6805 15.4616 33.0474 15.0711 32.6569L9.41422 27L15.0711 21.3431C15.4616 20.9526 15.4616 20.3195 15.0711 19.9289C14.6805 19.5384 14.0474 19.5384 13.6569 19.9289L7.29289 26.2929ZM46 26L8 26V28L46 28V26Z' fill='%23120E00'/%3e%3c/svg%3e ");
+	}
+	& .carousel-control-next-icon {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='27' cy='27' r='27' fill='rgba(254, 254, 254, 0.3)' /%3e%3cpath d='M46.7071 26.2929C47.0976 26.6834 47.0976 27.3166 46.7071 27.7071L40.3431 34.0711C39.9526 34.4616 39.3195 34.4616 38.9289 34.0711C38.5384 33.6805 38.5384 33.0474 38.9289 32.6569L44.5858 27L38.9289 21.3431C38.5384 20.9526 38.5384 20.3195 38.9289 19.9289C39.3195 19.5384 39.9526 19.5384 40.3431 19.9289L46.7071 26.2929ZM8 26L46 26V28L8 28V26Z' fill='%23120E00'/%3e%3c/svg%3e ");
+	}
+	& .carousel-control-next-icon, .carousel-control-prev-icon {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+	& .counter {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 50px;
+		min-width: 241px;
+		display: flex;
+		grid-gap: 13px;
+		font-size: 28px;
+		line-height: 34px;
+		color: #120E00;
+		@media screen and (max-width: 576px) {
+			min-width: 100%;
+			justify-content: center;
+			flex-wrap: wrap;
+			grid-gap: 5px;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 16px;
+		}
+	}
+	& .live {
+		color: #BF1616;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 50px;
+	}
+}

@@ -1,0 +1,109 @@
+.auction-list {
+	grid-gap: 30px 0;
+	& > * {
+		padding: 0;
+	}
+}
+.card.auction {
+	border: none;
+	height: 100%;
+	--bs-card-inner-border-radius: 0;
+	padding: 0 30px;
+	& .card-body {
+		padding: 8px 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	& .card-img-top {
+		height: 320px;
+		object-fit: contain;
+	}
+	& .card-info {
+		margin-bottom: 4px;
+		& p {
+			margin-bottom: 0;
+		}
+		& p:first-of-type {
+			font-size: 18px;
+			color: #120E00;
+		}
+		& p:last-of-type {
+			color: #29654F;
+		}
+	}
+	& .card-info-sold {
+		& p {
+			margin-bottom: 0;
+		}
+		& p:first-of-type {
+			margin-bottom: 2px;
+			color: #29654F;
+		}
+		& p:last-of-type {
+			font-size: 18px;
+			color: #120E00;
+		}
+	}
+	& .card-title {
+		margin-bottom: 4px;
+		color: #120E00;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+		text-decoration: none;
+		@media screen and (max-width: 576px) {
+			-webkit-line-clamp: 4;
+		}
+		&:hover {
+			color: #120E00;
+		}
+	}
+	& .card-text {
+		margin-bottom: 8px;
+		color: #5F5F5F;
+		margin-top: auto;
+	}
+	& .card-form {
+		& input {
+			font-size: 14px;
+			line-height: 16px;
+			padding: .4rem 1rem;
+			border-color: #B7B6B2;
+			&:focus {
+				box-shadow: none;
+				border-color: #B7B6B2;
+			}
+		}
+		& .form-control::placeholder {
+			color: #5F5F5F;
+		}
+		& .form-control::placeholder,
+		& .btn-success {
+			font-size: 14px;
+			line-height: 16px;
+		}
+		& .btn-success {
+			padding: .4rem 1rem;
+		}
+	}
+	& .carousel {
+		&:hover {
+			& .carousel-control-next,
+			& .carousel-control-prev {
+				opacity: 1;
+			}
+		}
+		& .carousel-control-next,
+		& .carousel-control-prev {
+			opacity: 0;
+		}
+		& .carousel-control-prev-icon,
+		& .carousel-control-next-icon {
+			background-color: rgba(1, 1, 1, 0.4);
+			border-radius: 50%;
+			border: 5px solid transparent;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_component-contact-us";
+@import "_footer";
+@import "_default";
+@import "_select2";
+@import "_modal";
+.accordion {
+	margin-top: 20px;
+	&-header {
+
+	}
+	&-button {
+		font-size: 20px;
+		line-height: 24px;
+		padding-left: 0;
+		&:not(.collapsed) {
+			color: #2D7158;
+			box-shadow: none;
+			background-color: transparent;
+		}
+		&:focus {
+			box-shadow: none;
+		}
+		&:not(.collapsed)::after {
+			background-image: var(--bs-accordion-btn-icon);
+		}
+		&.collapsed {
+			color: #120E00;
+		}
+	}
+	&-collapse {
+		&.show {
+
+		}
+	}
+	&-body {
+		padding-left: 0;
+		font-size: 20px;
+		line-height: 24px;
+		color: #5F5F5F;
+		& a {
+			text-decoration-line: underline;
+			color: #2D7158;
+			&:hover {
+				color: #409B7A;
+			}
+			&:active {
+				color: #29654F;
+			}
+		}
+	}
+}
+.accordion-flush .accordion-item:last-child {
+	border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}

@@ -1,0 +1,334 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_footer";
+@import "_default";
+@import "_modal";
+@import "_select2";
+
+
+.progress {
+	margin-top: 16px;
+	background-color: rgba(207, 51, 30, 0.05);
+	&-bar {
+		background-color: #CF331E;
+	}
+}
+
+.auction {
+	&-date {
+		font-size: 1.5rem;
+		line-height: normal;
+		color: #120E00;
+		@media screen and (max-width: 768px) {
+			font-size: 1.125rem;
+		}
+	}
+	&-progress {
+		font-size: 1.25rem;
+		line-height: normal;
+		color: #120E00;
+		@media screen and (max-width: 768px) {
+			font-size: 1rem;
+		}
+	}
+	&-list {
+		margin-top: 16px;
+		border-radius: 4px;
+		border: 1px solid #B7B6B2;
+		max-height: 684px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		@media screen and (max-width: 992px) {
+			overflow-x: auto;
+			overflow-y: hidden;
+			max-height: 100%;
+			display: flex;
+		}
+		&::-webkit-scrollbar {
+			border-radius: 4px;
+			width: 7px;
+			height: 8px;
+			background-color: rgba(207, 51, 30, 0.05);
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			height: 8px;
+			background-color: #CF331E;
+		}
+	}
+	&-lot {
+		display: flex;
+		grid-gap: 12px;
+		justify-content: space-between;
+		padding: 12px 10px 12px 16px;
+		text-decoration: none;
+		border-bottom: 1px solid #B7B6B2;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+			grid-gap: 8px;
+			min-width: 130px;
+			width: 100%;
+			max-width: 130px;
+			padding: 12px 4px 4px;
+			border-bottom: none;
+			border-right: 1px solid #B7B6B2;
+		}
+		&:last-child {
+			border-bottom: none;
+			@media screen and (max-width: 992px) {
+				border-right: none;
+			}
+		}
+		&:hover {
+				background-color: rgba(45, 113, 88, 0.05);
+		}
+		&.current-lot {
+			background: rgba(207, 51, 30, 0.05);
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				border-radius: 4px 0 0 0;
+				background-color: #CF331E;
+				width: 6px;
+				height: 100%;
+				@media screen and (max-width: 992px) {
+					width: 100%;
+					height: 6px;
+				}
+			}
+		}
+		&-img {
+			width: 100px;
+			height: 100px;
+			object-fit: contain;
+			@media screen and (max-width: 992px) {
+				width: 100%;
+			}
+		}
+		&-info {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+		&-current {
+			font-size: 1.5rem;
+			color: #CF331E;
+			font-weight: 600;
+			margin-bottom: 8px;
+			line-height: normal;
+			@media screen and (max-width: 992px) {
+				font-size: .875rem;
+				margin-bottom: 6px;
+			}
+		}
+		&-name {
+			color: #120E00;
+			font-size: 1rem;
+			line-height: normal;
+			margin-bottom: 11px;
+			@media screen and (max-width: 992px) {
+				font-size: .75rem;
+				margin-bottom: 4px;
+			}
+		}
+		&-range {
+			font-size: 1.125rem;
+			line-height: normal;
+			color: #2D7158;
+			@media screen and (max-width: 992px) {
+				font-size: .75rem;
+			}
+		}
+		&-rate {
+			font-size: 1.25rem;
+			line-height: 165%;
+			color: #120E00;
+			vertical-align: center;
+			@media screen and (max-width: 992px) {
+				font-size: 1rem;
+			}
+			& > span {
+				font-size: 1rem;
+				line-height: normal;
+				color: #5F5F5F;
+				margin-left: 12px;
+				@media screen and (max-width: 992px) {
+					display: none;
+				}
+			}
+		}
+	}
+	&-current-lot {
+		@media screen and (max-width: 992px) {
+			margin-top: 24px;
+		}
+		&-title {
+			color: #120E00;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: normal;
+			margin-bottom: 16px;
+			@media screen and (max-width: 768px) {
+				font-size: 1.25rem;
+			}
+		}
+		&-slider {
+			border-radius: 4px;
+			padding: 13px 12px;
+			border: 1px solid #B7B6B2;
+			position: relative;
+			@media screen and (max-width: 768px) {
+				padding: 9px 8px;
+			}
+		}
+	}
+	&-list-bet {
+		border-radius: 4px;
+		border: 1px solid #B7B6B2;
+		padding: 0 12px 12px 12px;
+		max-height: 495px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		@media screen and (max-width: 768px) {
+			margin-top: 48px;
+			max-height: 366px;
+		}
+		&::-webkit-scrollbar {
+			border-radius: 4px;
+			width: 7px;
+			height: 8px;
+			background-color: rgba(207, 51, 30, 0.05);
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			height: 8px;
+			background-color: #CF331E;
+		}
+		&-item {
+			display: flex;
+			align-items: center;
+			grid-gap: 8px;
+			padding: 10px 12px;
+			border-radius: 3px;
+			border: 1px solid #B7B6B2;
+			background-color: #F4F8F6;
+			margin-bottom: 10px;
+			& span {
+				color: #120E00;
+				font-size: 1.125rem;
+				line-height: normal;
+			}
+		}
+	}
+	&-form {
+		&-rate {
+			color: #2D7158;
+			font-size: 1.5rem;
+			line-height: normal;
+			margin-top: 52px;
+			margin-bottom: 12px;
+			text-align: right;
+			@media screen and (max-width: 768px) {
+				font-size: 1.125rem;
+				margin-top: 24px;
+			}
+		}
+		&-wrapper {
+
+		}
+		&-item {
+			&:last-child {
+				& .btn-danger {
+					margin-left: auto;
+					display: block;
+					border-radius: 4px;
+					background-color: #CF331E;
+					max-width: 340px;
+					width: 100%;
+					font-size: 1.5rem;
+					line-height: normal;
+					padding: 1rem;
+					@media screen and (max-width: 768px) {
+						font-size: 1.125rem;
+						max-width: 100%;
+					}
+					&:hover {
+						background-color: #f65b47;
+					}
+					&:active {
+						background-color: #d12711;
+					}
+				}
+			}
+			& > label {
+				display: block;
+			}
+			& input {
+				width: 100%;
+				text-align: right;
+				border-radius: 4px;
+				padding: 21px 32px;
+				border: 1px solid #B7B6B2;
+				color: #120E00;
+				font-size: 2.75rem;
+				line-height: normal;
+				@media screen and (max-width: 768px) {
+					font-size: 2rem;
+					padding: 12px;
+				}
+				&::placeholder {
+					color: #5F5F5F;
+				}
+				&:hover {
+					background-color: rgba(45,113,88,.05);
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}
+.current-purely-viewable {
+	display: flex;
+	align-items: center;
+	grid-gap: 8px;
+	color: #5F5F5F;
+	font-size: 1.125rem;
+	line-height: normal;
+}
+.swiper {
+	&-wrapper {
+	}
+	&-slide {
+		padding: 0 50px;
+		& > picture {
+			display: block;
+		}
+		& img {
+			width: 100%;
+			height: 435px;
+			object-fit: contain;
+			@media screen and (max-width: 525px) {
+				height: 255px;
+			}
+		}
+	}
+	&-button-next {
+		color: #5F5F5F;
+	}
+	&-button-prev {
+		color: #5F5F5F;
+	}
+	&-pagination {
+		bottom: -30px;
+		top: auto;
+		color: #5F5F5F;
+		font-size: 1.25rem;
+		line-height: normal;
+	}
+}

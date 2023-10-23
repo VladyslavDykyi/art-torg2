@@ -1,0 +1,22 @@
+@import "_header";
+@import "_block-now";
+@import "_breadcrumb";
+@import "_pagination";
+@import "_default";
+@import "_footer";
+@import "_select2";
+@import "_modal";
+
+.link-arrow {
+
+	&:hover {
+		& path {
+			fill: #409B7A;
+		}
+	}
+	&:active {
+		& path {
+			fill: #29654F;
+		}
+	}
+}

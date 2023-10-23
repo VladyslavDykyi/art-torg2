@@ -1,0 +1,33 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_component-contact-us";
+@import "_footer";
+@import "_default";
+@import "_select2";
+@import "_modal";
+
+.services {
+	margin-top: 24px;
+	&-item {
+		margin-bottom: 60px;
+		@media screen and (max-width: 576px) {
+			margin-bottom: 10px;
+		}
+	}
+	&-title {
+		margin-bottom: 24px;
+	}
+	&-img {
+		width: 100%;
+		height: auto;
+	}
+	&-text {
+		font-size: 20px;
+		line-height: 165%;
+		color: #5F5F5F;
+		@media screen and (max-width: 576px) {
+			font-size: 16px;
+			line-height: 150%;
+		}
+	}
+}

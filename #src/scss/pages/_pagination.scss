@@ -1,0 +1,35 @@
+.pagination {
+	& .page-item {
+		&.active {
+			& .page-link {
+				border-color: #2D7158;
+				color: #FFFFFF;
+				background: #2D7158;
+			}
+		}
+
+		&:hover a {
+			background-color: #409B7A;
+			color: #FFFFFF;
+		}
+
+		&:active {
+			& a {
+				background-color: #29654F;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	& .page-link {
+		border-color: #B7B6B2;
+		color: #5F5F5F;
+		&:focus {
+			box-shadow: none;
+			background-color: transparent;
+			& a {
+				box-shadow: none;
+			}
+		}
+	}
+}

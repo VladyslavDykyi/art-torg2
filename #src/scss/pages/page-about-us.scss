@@ -1,0 +1,121 @@
+@import "_header";
+@import "_breadcrumb";
+@import "_footer";
+@import "_default";
+@import "_modal";
+@import "_select2";
+.about {
+	& p {
+		color: #120E00;
+		font-size: 20px;
+		line-height: 165%;
+	}
+
+	&-gallery {
+		margin-top: 32px;
+		margin-bottom: 60px;
+		@media screen and (max-width: 576px) {
+			margin-top: 22px;
+			margin-bottom: 30px;
+		}
+		& ul {
+			padding-left: 0;
+			list-style-type: none;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: .5fr .5fr;
+			grid-gap: 30px;
+			@media screen and (max-width: 576px) {
+				grid-gap: 10px;
+			}
+			& li {
+				& img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			& li:nth-child(1) {
+				grid-column: 1/4;
+				grid-row: 1/2;
+			}
+
+			& li:nth-child(2) {
+				grid-column: 1/6;
+				grid-row: 2/3;
+			}
+
+			& li:nth-child(3) {
+				grid-column: 4/9;
+				grid-row: 1/2;
+			}
+
+			& li:nth-child(4) {
+				grid-column: 6/9;
+				grid-row: 2/3;
+			}
+
+			& li:nth-child(5) {
+				grid-column: 9/13;
+				grid-row: 1/3;
+			}
+		}
+	}
+
+	&-goal {
+		margin-top: 32px;
+		margin-bottom: 30px;
+		height: fit-content;
+		@media screen and (max-width: 425px) {
+			margin-top: 22px;
+			margin-bottom: 30px;
+		}
+		&:after {
+			content: '';
+			clear: both;
+		}
+		& iframe {
+			width: 55%;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			height: 100%;
+			min-height: 450px;
+			@media screen and (max-width: 992px) {
+				min-height: 350px;
+			}
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				margin-right: 0;
+				height: auto;
+				float: none;
+			}
+			@media screen and (max-width: 425px) {
+				min-height: 250px;
+			}
+		}
+	}
+
+	&-specialization {
+		margin-top: 32px;
+		@media screen and (max-width: 576px) {
+			margin-top: 22px;
+		}
+		& p:first-of-type {
+			margin-bottom: 36px;
+		}
+
+		& img {
+			margin-left: 30px;
+			margin-bottom: 30px;
+			width: 40%;
+			@media screen and (max-width: 768px) {
+				width: 50%;
+			}
+			@media screen and (max-width: 425px) {
+				margin-left: 0;
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}

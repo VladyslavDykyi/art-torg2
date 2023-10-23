@@ -1,0 +1,96 @@
+<div class="container-xxl">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="h2-pf">
+				Choose a payment method
+			</h2>
+		</div>
+		<div class="col-12 mt-3">
+			<form class="row align-items-start" action="#">
+				<div class="col-12 col-md-8 col-xl-9 radio">
+					<div class="radio-wrapper">
+						<input class="radio-input" type="radio" name="payment" id="visaMasterCard" checked>
+						<label class="radio-label" for="visaMasterCard">
+							<span>
+								<img src="./img/Visa.svg" alt="">
+								<span>Visa / </span>
+							</span>
+							<span>
+								<img src="./img/MasterCard.svg" alt="">
+								<span>Mastercard</span>
+							</span>
+						</label>
+					</div>
+					<div class="radio-wrapper">
+						<input class="radio-input" type="radio" name="payment" id="amex" >
+						<label class="radio-label" for="amex">
+							<img src="./img/Amex.svg" alt="">
+							<span>AMEX</span>
+						</label>
+					</div>
+					<div class="radio-wrapper">
+						<input class="radio-input" type="radio" name="payment" id="payPal" >
+						<label class="radio-label" for="payPal">
+							<img src="./img/Paypal.svg" alt="">
+							<span>PayPal</span>
+						</label>
+					</div>
+					<div class="radio-wrapper">
+						<input class="radio-input" type="radio" name="payment" id="bitCoin" >
+						<label class="radio-label" for="bitCoin">
+							<img src="./img/Bitcoin.svg" alt="">
+							<span>Cryptocurrency</span>
+						</label>
+					</div>
+					<div class="radio-wrapper">
+						<input class="radio-input" type="radio" name="payment" id="wireTransfer" >
+						<label class="radio-label" for="wireTransfer">
+							<img src="./img/wire-transfer.svg" alt="">
+							<!--				18.07.23-->
+							<span>
+								Wire transfer
+								<span class="sub-text">We will send you an invoice with details</span>
+							</span>
+
+						</label>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-xl-3 ">
+					<div class="cart-lots">
+						<!--					у цих 4х блоках нижце може додаватись класс disabled для зміни кольору на заблокований у ціні і у 4тому це атрибут -->
+						<div class="cart-lots-cost">
+							<span>
+								Cost of lots:
+							</span>
+							<span>
+								496 000 €
+							</span>
+						</div>
+						<div class="cart-lots-shipping disabled">
+							<span>
+								Shipping to:
+							</span>
+							<span>
+								EU, Russia, Middle Assia - DHL
+							</span>
+							<span>
+								415 €
+							</span>
+						</div>
+						<div class="cart-lots-total-cost disabled">
+							<span>
+								Total cost:
+							</span>
+							<span>
+								496 415 €
+							</span>
+						</div>
+						<button class="btn btn-success" type="submit">
+							Go to payment
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

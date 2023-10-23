@@ -1,0 +1,129 @@
+<div class="container-xxl">
+	<div class="row personal-data">
+		<div class="col-12">
+			<div class="d-flex justify-content-center">
+				<div class="btn-group personal-data-links" role="group" aria-label="Default button group">
+					<a href="./page-account-personal-data.html" class="btn btn-outline-success active">Personal data</a>
+					<a href="#" class="btn btn-outline-success">Won Items</a>
+					<a href="#" class="btn btn-outline-success">Messages</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 d-flex orders-info">
+			<div class="orders-count">
+				<p>35 Orders</p>
+			</div>
+			<div class="orders-select inputs-wrapper">
+				<label for="selectStatus"></label>
+					<select class="select2-status form-control  inp"  name="selectStatus" id="selectStatus">
+						<option value="" >- -</option>
+						<option>Ukraine</option>
+						<option>France</option>
+						<option>Germany</option>
+					</select>
+
+			</div>
+		</div>
+		<div class="col-12 orders-list">
+		<!-- цей заголовок з'являється коли нічого немає -->
+		<!--<h2>You have no won items</h2>-->
+			<div class="orders-item">
+				<header class="orders-item-header">
+					<span class="orders-item-invoice">
+						Invoice #2
+					</span>
+					<time class="orders-item-date">
+						Jun 01, 2023 5:00 PM GMT+3
+					</time>
+					<span class="orders-item-name">
+						Americana Collection Janice & Bernard Phaneuf
+					</span>
+					<span class="orders-item-location">
+						New England Auctions
+					</span>
+					<span class="orders-item-price">
+						Total: 56$
+					</span>
+				</header>
+				<main class="orders-item-main">
+					<section class="orders-item-main-info">
+						<!-- тут або є text i checkout або ні -->
+						<div class="orders-item-main-status">
+							<span>Payment Due</span>
+							<a href="#" class="btn btn-link">
+								Contact ArtTorg
+							</a>
+						</div>
+						<p class="orders-item-main-text">
+							Please proceed to checkout to complete payment and arrange shippping
+						</p>
+						<a href="#" class="orders-item-main-link btn btn-success">
+							Checkout
+						</a>
+					</section>
+					<section class="orders-item-main-card">
+						<img class="orders-item-main-img" src="./img/test.png" alt="">
+						<div class="orders-item-main-wrapper">
+							<h2 class="orders-item-main-title">
+								Journey Through Time
+							</h2>
+							<p class="orders-item-main-number">
+								Lot #4
+							</p>
+							<p class="orders-item-main-price">
+								56$
+							</p>
+						</div>
+					</section>
+				</main>
+			</div>
+			<div class="orders-item">
+				<header class="orders-item-header">
+					<span class="orders-item-invoice">
+						Invoice #2
+					</span>
+					<time class="orders-item-date">
+						Jun 01, 2023 5:00 PM GMT+3
+					</time>
+					<span class="orders-item-name">
+						Americana Collection Janice & Bernard Phaneuf
+					</span>
+					<span class="orders-item-location">
+						New England Auctions
+					</span>
+					<span class="orders-item-price">
+						Total: 56$
+					</span>
+				</header>
+				<main class="orders-item-main">
+					<section class="orders-item-main-info">
+						<!-- тут або є text i checkout або ні -->
+						<div class="orders-item-main-status">
+							<span>Paid</span>
+							<a href="#" class="btn btn-link">
+								Contact ArtTorg
+							</a>
+						</div>
+					</section>
+					<section class="orders-item-main-card">
+						<img class="orders-item-main-img" src="./img/test2.png" alt="">
+						<div class="orders-item-main-wrapper">
+							<h2 class="orders-item-main-title">
+								Journey Through Time
+							</h2>
+							<p class="orders-item-main-number">
+								Lot #4
+							</p>
+							<p class="orders-item-main-price">
+								56$
+							</p>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+		<div class="col-12">
+			@@include('./_pagination.html')
+		</div>
+	</div>
+</div>
