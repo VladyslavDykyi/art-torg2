@@ -11,12 +11,9 @@
 				event.preventDefault()
 				event.stopPropagation()
 			}
-
 			form.classList.add('was-validated')
 		}, false)
 	})
 	const myCarouselElement = document.querySelectorAll('.carousel');
-	myCarouselElement.forEach((item) => new bootstrap.Carousel(item,{
-		interval:3000,
-	}));
+	myCarouselElement.forEach((item) => new bootstrap.Carousel());
 })();

@@ -5,10 +5,19 @@
 	&-list {
 
 	}
+	& hr {
+		color: #D2CCC3;
+		margin: 45px 0 70px;
+		opacity: 1;
+		@media screen and (max-width: 768px) {
+			margin: 25px 0 35px;
+		}
+	}
 }
 .card {
 	border: none;
 	height: 100%;
+	background-color: #EDE8E3;
 	&-img-top {
 		height: 350px;
 		object-fit: contain;
@@ -17,23 +26,30 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		padding-left: 0;
+		padding-right: 0;
 	}
+	&-title a,
 	&-title {
-		color: #120E00;
+		color: #291F0F;
 		text-decoration: none;
+		margin-bottom: 7px;
 		&:hover {
-			color: #120E00;
+			color: #291F0F;
 		}
 	}
 	&-text {
 		line-height: 24px;
 		color: #5F5F5F;
-		margin-bottom: auto;
+		margin-bottom: 4px;
 	}
 	&-price {
-		line-height: 38px;
-		color: #120E00;
+
+		color: #291F0F;
 		padding-right: 10px;
+		margin-bottom: 7px;
+		font-weight: 500;
+		line-height: normal;
 	}
 
 	& .carousel {
@@ -49,9 +65,10 @@
 		}
 		& .carousel-control-prev-icon,
 		& .carousel-control-next-icon {
-			background-color: rgba(1, 1, 1, 0.4);
+			background-color: rgba(3, 80, 85, 0.5);
 			border-radius: 50%;
 			border: 5px solid transparent;
+			filter: none;
 		}
 	}
 }

@@ -7,6 +7,36 @@
 		color: #2D7158;
 	}
 	&-form {
+		& .contact-form-input:nth-child(1) label {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			white-space: nowrap;
+			border: 0;
+			@media screen and (max-width: 580px) {
+				position: relative;
+				padding-top: 12px;
+			}
+		}
+		& .contact-form-input:nth-child(2) label {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			white-space: nowrap;
+			border: 0;
+			@media screen and (max-width: 768px) {
+				position: relative;
+				padding-top: 12px;
+			}
+		}
 		&-input {
 			& label {
 				margin-bottom: 0;
@@ -40,6 +70,13 @@
 			& button {
 
 			}
+		}
+	}
+	&-img {
+		width: 100%;
+		height: auto;
+		@media screen and (max-width: 998px) {
+			display: none;
 		}
 	}
 }

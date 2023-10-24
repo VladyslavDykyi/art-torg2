@@ -1,5 +1,5 @@
 header > nav > div:first-child {
-	border-bottom: 1px solid rgba(95, 95, 95, 0.2);
+	border-bottom: 1px solid #D2CCC3;
 }
 header a.nav-link,
 header span.nav-link,
@@ -15,12 +15,22 @@ header a.dropdown-item {
 		font-size: 1.125rem;
 	}
 }
+
 header .dropdown-menu a.dropdown-item {
+	&:focus {
+		background-color: #05868E;
+		color: #FFFFFF;
+	}
+	&:hover {
+		background-color: #05868E;
+		color: #FFFFFF;
+	}
 	&:active {
-		background-color: #409b7a;
+		background-color: #05868E;
+		color: #FFFFFF;
 	}
 	&.active {
-		background-color: #2D7158;
+		background-color: #056B72;
 		color: #FFFFFF;
 	}
 }
@@ -39,10 +49,10 @@ header .dropdown-menu a.dropdown-item {
 	}
 }
 header a.buy-now {
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 29px;
-	color: #2D7158;
+	color: #056B72;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
 }
 .dropdown-toggle {
 	&.show {
@@ -59,6 +69,12 @@ header a.buy-now {
 		vertical-align: -0.045em;
 	}
 }
+.navbar-brand svg{
+	@media screen and (max-width: 580px) {
+		width: 180px;
+		height: auto;
+	}
+}
 .link-support {
 	color: #120E00;
 	& > a {
@@ -66,15 +82,25 @@ header a.buy-now {
 	}
 }
 .nav-link:focus, .nav-link:hover {
-	color: #2D7158;
+	color: #056B72;
 	text-decoration: underline;
 }
+@media screen and (max-width: 992px){
+	.navbar-collapse {
+		 padding-left: 0; 
+	}
+}
+
 .bi {
 	font-size: 26px;
+}
+.dropdown-menu {
+	background-color: #EDE8E3;
 }
 @media screen and (max-width: 992px) {
 	.dropdown-menu {
 		border: none;
+
 		& a {
 			text-align: center;
 		}
@@ -85,22 +111,24 @@ header a.buy-now {
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-	color: #2D7158;
+	color: #056B72;
 }
 header a.nav-link,
 header a.dropdown-item {
 	&.active {
-		color: #2D7158;
+		color: #056B72;
 		text-decoration: underline;
 	}
 }
+.nav-link {
+	color: #291F0F;
+}
 header .entered {
-	color: #2D7158;
+	color: #291F0F;
 	display: inline-flex;
 	align-items: center;
 	& span {
 		font-size: 1.25rem;
-		color: #120E00;
 		margin-right: 8px;
 		@media screen and (max-width: 1185px) {
 			font-size: .87rem;
@@ -112,7 +140,7 @@ header .entered {
 }
 span.nav-link {
 	&:hover {
-		color: #120E00;
+		color: #056b72;
 		text-decoration: none;
 	}
 }
@@ -121,15 +149,16 @@ span.nav-link {
 	&-count {
 		position: absolute;
 		padding: 3px 4px;
-		color: #fff;
-		background-color: #0c4128;
-		font-size: 12px;
-		line-height: 12px;
+		color: #291F0F;
+		font-size: 16px;
+		line-height: 165.5%;
+		display: block;
 		min-width: 18px;
 		height: 18px;
 		text-align: center;
 		border-radius: 10px;
-		left: 20px;
-		top: 10px;
+		left: 50%;
+		top: 42%;
+		transform: translate(-50% , -50%);
 	}
 }
