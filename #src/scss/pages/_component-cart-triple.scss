@@ -3,7 +3,8 @@
 	grid-gap: 30px 0;
 }
 .card.auction {
-	border: 1px solid #B7B6B2;
+	background-color: #EDE8E3;
+	border: 1px solid #D2CCC3;
 	border-radius: 4px;
 	height: 100%;
 	--bs-card-inner-border-radius: 0;
@@ -42,13 +43,13 @@
 		}
 	}
 	& .card-body {
-		padding: 10px 10px 14px;
+		padding: 10px 8px 18px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 	& .card-auction {
-		color: #120E00;
+		color: #291F0F;
 		margin-bottom: 4px;
 		font-weight: 500;
 		line-height: 150%;
@@ -56,21 +57,29 @@
 	& .card-info-sold {
 		& p {
 			margin-bottom: 0;
-			color: #120E00;
+			color: #6F6F6F;
 		}
 		& p:last-of-type {
 			font-size: 1.125rem;
 			font-weight: 600;
 			line-height: 165.5%;
+			color: #291F0F;
+			text-align: right;
 		}
 	}
 	& .card-title {
-		font-size: 1.125rem;
-		margin-bottom: 10px;
-		color: #120E00;
+		font-size: 1.25rem;
+		margin-bottom: 26px;
+		color: #291F0F;
 		text-decoration: none;
+		font-weight: 500;
+		line-height: 150%;
 		&:hover {
-			color: #120E00;
+			color: #291F0F;
+		}
+		& a {
+			color: inherit;
+			text-decoration: none;
 		}
 	}
 	& .card-date {

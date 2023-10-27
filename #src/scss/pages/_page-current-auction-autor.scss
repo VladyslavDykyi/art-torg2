@@ -1,7 +1,11 @@
 .author {
+	margin-bottom: 30px;
 	& .inputs-wrapper {
 		display: block;
 		max-width: 420px;
 		width: 100%;
+	}
+	& .select2-container--default .select2-selection--single {
+		background-color: #EDE8E3;
 	}
 }

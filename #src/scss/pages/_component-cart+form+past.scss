@@ -9,6 +9,7 @@
 	height: 100%;
 	--bs-card-inner-border-radius: 0;
 	padding: 0 30px;
+	background-color: #EDE8E3;
 	& .card-body {
 		padding: 8px 0;
 		height: 100%;
@@ -26,10 +27,11 @@
 		}
 		& p:first-of-type {
 			font-size: 18px;
-			color: #120E00;
+			font-weight: 500;
+			color: #291F0F !important;
 		}
 		& p:last-of-type {
-			color: #29654F;
+			color: #035055;
 		}
 	}
 	& .card-info-sold {
@@ -38,16 +40,18 @@
 		}
 		& p:first-of-type {
 			margin-bottom: 2px;
-			color: #29654F;
+			color: #056B72;
 		}
 		& p:last-of-type {
 			font-size: 18px;
-			color: #120E00;
+			color: #291F0F;
+			line-height: 165%;
 		}
 	}
 	& .card-title {
+		font-weight: 500;
 		margin-bottom: 4px;
-		color: #120E00;
+		color: #291F0F;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
@@ -57,27 +61,34 @@
 			-webkit-line-clamp: 4;
 		}
 		&:hover {
-			color: #120E00;
+			color: #291F0F;
+		}
+		& a {
+			text-decoration: none;
+			color: inherit;
 		}
 	}
 	& .card-text {
-		margin-bottom: 8px;
-		color: #5F5F5F;
+		margin-bottom: 0;
+		color: #6F6F6F;
 		margin-top: auto;
 	}
 	& .card-form {
+		margin-top: 8px;
 		& input {
 			font-size: 14px;
 			line-height: 16px;
 			padding: .4rem;
-			border-color: #B7B6B2;
+			border-color: #D2CCC3;
+			background-color: #EDE8E3;
+			border-radius: 0;
 			&:focus {
 				box-shadow: none;
-				border-color: #B7B6B2;
+				border-color: #D2CCC3;
 			}
 		}
 		& .form-control::placeholder {
-			color: #5F5F5F;
+			color: #6F6F6F;
 		}
 		& .form-control::placeholder,
 		& .btn-success {
@@ -101,9 +112,10 @@
 		}
 		& .carousel-control-prev-icon,
 		& .carousel-control-next-icon {
-			background-color: rgba(1, 1, 1, 0.4);
+			background-color: rgba(3, 80, 85, 0.5);
 			border-radius: 50%;
 			border: 5px solid transparent;
+			filter: none;
 		}
 	}
 }

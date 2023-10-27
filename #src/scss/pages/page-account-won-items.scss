@@ -1,13 +1,13 @@
 @import "_header";
 @import "_breadcrumb";
-
-
-
 @import "_pagination";
 @import "_footer";
 @import "_default";
 @import "_modal";
 @import "_select2";
+.select2-container--default .select2-selection--single {
+	background-color: #EDE8E3;
+}
 .personal-data {
 	&-links {
 		max-width: 600px;
@@ -15,7 +15,7 @@
 		padding-bottom: 20px;
 		& a.btn {
 			max-width: 200px;
-			color: #5F5F5F;
+			color: #6F6F6F;
 			border-radius: 4px;
 			font-size: 1.25rem;
 			padding: .688rem .75rem;
@@ -41,7 +41,7 @@
 			margin-bottom: 12px;
 		}
 		& p {
-			color: #5F5F5F;
+			color: #6F6F6F;
 			font-size: 1.5rem;
 			font-weight: 700;
 			margin-bottom: 0;
@@ -64,7 +64,7 @@
 		padding-top: 32px;
 		padding-bottom: 48px;
 		& > h2 {
-			color: #5F5F5F;
+			color: #6F6F6F;
 			margin-top: 48px;
 			margin-bottom: 30px;
 			text-align: center;
@@ -76,7 +76,7 @@
 			margin-bottom: 0;
 		}
 		&-header {
-			background-color: #EAEAEA;
+			background-color: #D2CCC3;
 			padding: 13px 22px;
 			display: flex;
 			border-radius: 4px 4px 0 0;
@@ -102,21 +102,21 @@
 			}
 		}
 		&-invoice {
-			color: #120E00;
+			color: #291F0F;
 		}
 		&-date {
-			color: #5F5F5F;
+			color: #6F6F6F;
 		}
 		&-name {
-			color: #5F5F5F;
+			color: #6F6F6F;
 		}
 		&-location {
-			color: #5F5F5F;
+			color: #6F6F6F;
 		}
 		&-price {
 			margin-left: auto;
 			margin-right: 0;
-			color: #120E00;
+			color: #291F0F;
 			@media screen and (max-width: 768px) {
 				margin-left: 0;
 			}
@@ -140,12 +140,12 @@
 					grid-gap: 8px;
 				}
 				& span {
-					color: #120E00;
+					color: #291F0F;
 					font-weight: 700;
 					font-size: 1.25rem;
 				}
 				& .btn.btn-link {
-					color: #2D7158;
+					color: #056B72;
 					text-decoration: underline;
 					font-size: 1.125rem;
 					padding: 0;
@@ -154,17 +154,17 @@
 						text-align: right;
 					}
 					&:hover {
-						color: #409B7A;
+						color: #05868E;
 					}
 					&:active {
-						color: #2D7158;
+						color: #035055;
 						text-decoration: underline;
 					}
 				}
 			}
 			&-text {
 				margin-top: 6px;
-				color: #5F5F5F;
+				color: #6F6F6F;
 				margin-bottom: 0;
 			}
 			&-link {
@@ -178,32 +178,35 @@
 				grid-gap: 8px;
 			}
 			& picture {
-				display: block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				border-radius: 2px;
-				border: 1px solid #EAEAEA;
+				border: 1px solid #D2CCC3;
 				width: 118px;
 				height: 118px;
 			}
 			&-img {
-				width: 118px;
-				height: 118px;
+				width: 116px;
+				height: 116px;
 				object-fit: contain;
 			}
 			&-wrapper {
 
 			}
 			&-title {
-				color: #120E00;
+				color: #291F0F;
 				font-size: 1.125rem;
+				font-weight: 400;
 				margin-bottom: 8px;
 			}
 			&-number {
-				color: #5F5F5F;
+				color: #6F6F6F;
 				font-size: 1.125rem;
 				margin-bottom: 8px;
 			}
 			&-price {
-				color: #5F5F5F;
+				color: #6F6F6F;
 				font-size: 1.125rem;
 				margin-bottom: 0;
 			}

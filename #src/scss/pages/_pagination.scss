@@ -2,28 +2,29 @@
 	& .page-item {
 		&.active {
 			& .page-link {
-				border-color: #2D7158;
+				border-color: #056B72;
 				color: #FFFFFF;
-				background: #2D7158;
+				background: #056B72;
 			}
 		}
 
 		&:hover a {
-			background-color: #409B7A;
+			background-color: #05868E;
 			color: #FFFFFF;
 		}
 
 		&:active {
 			& a {
-				background-color: #29654F;
+				background-color: #035055;
 				color: #FFFFFF;
 			}
 		}
 	}
 
 	& .page-link {
-		border-color: #B7B6B2;
-		color: #5F5F5F;
+		background-color: transparent;
+		border-color: #D2CCC3;
+		color: #6F6F6F;
 		&:focus {
 			box-shadow: none;
 			background-color: transparent;

@@ -1,25 +1,27 @@
 @import "_header";
 @import "_component-contact-us";
+@import "_breadcrumb";
 @import "_footer";
 @import "_default";
 @import "_select2";
 @import "_modal";
-body {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-}
+
 .wrapper {
 	margin-bottom: 60px;
 	margin-top: 36px;
 }
 .info-contact {
 
-	margin-top: 6px;
+	margin-top: 40px;
 	&:first-of-type {
-		border-top: 1px solid #B7B6B2;
+		border-top: 1px solid #D2CCC3;
 		padding-top: 12px;
 		margin-top: 12px;
+	}
+	& > div:first-child {
+		@media screen and (max-width: 768px) {
+			margin-bottom: 12px;
+		}
 	}
 	&:last-of-type {
 		& .nav {
@@ -30,26 +32,27 @@ body {
 		}
 	}
 	& h3 {
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 150%;
-		color: #120E00;
+		font-weight: 500;
+		color: #291F0F;
 	}
 	& .nav  {
 		& li {
-			font-size: 18px;
+			font-size: 20px;
 			line-height: 150%;
 			font-weight: 300;
-			color: #120E00;
+			color: #291F0F;
 		}
 		& a {
 			text-decoration: none;
-			color: #120E00;
+			color: #291F0F;
 			&:hover {
-				color: #409B7A;
+				color: #05868E;
 				text-decoration: underline;
 			}
 			&:active {
-				color: #29654F;
+				color: #035055;
 			}
 		}
 	}
@@ -59,12 +62,12 @@ body {
 
 	&:hover {
 		& path {
-			fill: #409B7A;
+			fill: #05868E;
 		}
 	}
 	&:active {
 		& path {
-			fill: #29654F;
+			fill: #035055;
 		}
 	}
 }

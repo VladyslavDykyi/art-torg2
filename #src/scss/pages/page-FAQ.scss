@@ -5,52 +5,87 @@
 @import "_default";
 @import "_select2";
 @import "_modal";
+
 .accordion {
 	margin-top: 20px;
+
 	&-header {
 
 	}
+
 	&-button {
 		font-size: 20px;
 		line-height: 24px;
 		padding-left: 0;
+		background-color: #EDE8E3;
+
 		&:not(.collapsed) {
-			color: #2D7158;
+			color: #056B72;
 			box-shadow: none;
 			background-color: transparent;
 		}
+
 		&:focus {
 			box-shadow: none;
 		}
+
 		&:not(.collapsed)::after {
 			background-image: var(--bs-accordion-btn-icon);
 		}
+
 		&.collapsed {
-			color: #120E00;
+			color: #291F0F;
 		}
 	}
+
 	&-collapse {
 		&.show {
 
 		}
 	}
+
 	&-body {
 		padding-left: 0;
 		font-size: 20px;
 		line-height: 24px;
-		color: #5F5F5F;
+		color: #6F6F6F;
+
+		& code {
+			color: #CF331E;
+		}
+
 		& a {
 			text-decoration-line: underline;
-			color: #2D7158;
+			color: #056B72;
+
 			&:hover {
-				color: #409B7A;
+				color: #05868E;
 			}
+
 			&:active {
-				color: #29654F;
+				color: #035055;
 			}
 		}
 	}
 }
-.accordion-flush .accordion-item:last-child {
-	border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+
+.accordion-flush {
+	& .accordion-item {
+		background-color: #EDE8E3;
+		border-color: #D2CCC3;
+		&:last-child {
+			border-bottom: 1px solid #D2CCC3;
+		}
+		&:hover {
+			border-color: #291F0F;
+		}
+		&:focus {
+			border-color: #291F0F;
+		}
+
+		&:active {
+			border-color: #291F0F;
+		}
+	}
 }
+

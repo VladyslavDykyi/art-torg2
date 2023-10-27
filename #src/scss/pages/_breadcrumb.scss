@@ -1,15 +1,15 @@
 .breadcrumb {
 	&-item {
 		font-size: 18px;
-		line-height: 22px;
+		line-height: normal;
 		& > a {
-			color: #2D7158;
+			color: #056B72;
 			&:hover {
-				color: #409B7A;
+				color: #05868E;
 			}
 		}
 		&.active {
-			color: #120E00;
+			color: #291F0F;
 		}
 	}
 }

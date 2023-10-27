@@ -6,9 +6,10 @@
 @import "_select2";
 .about {
 	& p {
-		color: #120E00;
-		font-size: 20px;
-		line-height: 165%;
+		color: #291F0F;
+		font-size: 18px;
+		line-height: 170%;
+		padding: 0 55px;
 	}
 
 	&-gallery {
@@ -74,24 +75,11 @@
 			content: '';
 			clear: both;
 		}
-		& iframe {
-			width: 55%;
-			margin-right: 30px;
-			margin-bottom: 30px;
-			height: 100%;
-			min-height: 450px;
-			@media screen and (max-width: 992px) {
-				min-height: 350px;
-			}
-			@media screen and (max-width: 768px) {
-				width: 100%;
-				margin-right: 0;
-				height: auto;
-				float: none;
-			}
-			@media screen and (max-width: 425px) {
-				min-height: 250px;
-			}
+		& h3.h2-pf {
+			font-weight: 400;
+			padding: 0 55px;
+			margin-top: 20px;
+			margin-bottom: 15px;
 		}
 	}
 

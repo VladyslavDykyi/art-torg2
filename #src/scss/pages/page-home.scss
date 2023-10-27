@@ -42,7 +42,7 @@
 		}
 	}
 	& .carousel-indicators [data-bs-target].active {
-		background-color: #2D7158;
+		background-color: #056B72;
 	}
 	& .carousel-indicators [data-bs-target] {
 		background-color: #B7B6B2;
@@ -103,6 +103,9 @@
 	& .carousel-control-next,
 	& .carousel-control-prev {
 		width: 8%;
+		@media screen and (max-width: 580px) {
+			opacity: .7;
+		}
 		&:hover {
 			opacity: 1;
 		}
@@ -116,6 +119,15 @@
 	& .carousel-control-next-icon, .carousel-control-prev-icon {
 		width: 4.5rem;
 		height: 4.5rem;
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 50px;
+		border: 6px solid rgba(255, 255, 255, 0.5);
+		@media screen and (max-width: 768px) {
+			height: 2.5rem;
+		}
+		@media screen and (max-width: 580px) {
+			width: 2.5rem;
+		}
 	}
 	& .counter {
 		width: 100%;

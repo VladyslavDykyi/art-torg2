@@ -133,19 +133,19 @@ span.nav-link:hover {
 
 .breadcrumb-item {
   font-size: 18px;
-  line-height: 22px;
+  line-height: normal;
 }
 
 .breadcrumb-item > a {
-  color: #2D7158;
+  color: #056B72;
 }
 
 .breadcrumb-item > a:hover {
-  color: #409B7A;
+  color: #05868E;
 }
 
 .breadcrumb-item.active {
-  color: #120E00;
+  color: #291F0F;
 }
 
 .footer {
@@ -204,6 +204,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #EDE8E3;
+}
+
+.modal-backdrop {
+  background: rgba(41, 31, 15, 0.3);
+  opacity: 1 !important;
 }
 
 .wrapper {
@@ -352,10 +357,17 @@ body {
   line-height: normal;
 }
 
+.modal .form-control.inp {
+  background-color: #EDE8E3;
+}
+
 .modal-content {
   height: 735px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
+  background: #EDE8E3;
+  -webkit-box-shadow: 0 10px 12px 0 #8C8C8C;
+          box-shadow: 0 10px 12px 0 #8C8C8C;
 }
 
 .modal-content .bg-modal {
@@ -424,7 +436,7 @@ body {
   display: block;
   margin-top: 8px;
   margin-left: auto;
-  color: #2D7158;
+  color: #056B72;
   text-decoration: none;
   font-size: 1rem;
   padding: 0;
@@ -432,11 +444,11 @@ body {
 }
 
 .modal-body .contact-form-input .btn.btn-link:hover {
-  color: #409B7A;
+  color: #05868E;
 }
 
 .modal-body .contact-form-input .btn.btn-link:active {
-  color: #2D7158;
+  color: #035055;
   text-decoration: underline;
 }
 
@@ -453,7 +465,7 @@ body {
 }
 
 .modal-body .form-check-input:checked + label:after {
-  background-color: #2D7158;
+  background-color: #056B72;
 }
 
 .modal-body .form-check {
@@ -463,7 +475,7 @@ body {
 
 .modal-body .form-check-label {
   padding-left: 40px;
-  color: #120E00;
+  color: #291F0F;
   line-height: 140%;
   position: relative;
   cursor: pointer;
@@ -481,7 +493,7 @@ body {
   display: block;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  border: 1px solid #2D7158;
+  border: 1px solid #056B72;
   top: 0;
   left: 0;
   background-color: transparent;
@@ -514,7 +526,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #120E00;
+  color: #291F0F;
   margin-top: 12px;
 }
 
@@ -523,7 +535,7 @@ body {
 }
 
 .modal-body .btn.btn-link {
-  color: #2D7158;
+  color: #056B72;
   text-decoration: none;
   font-size: 1rem;
   padding: 0;
@@ -531,33 +543,33 @@ body {
 }
 
 .modal-body .btn.btn-link:hover {
-  color: #409B7A;
+  color: #05868E;
 }
 
 .modal-body .btn.btn-link:active {
-  color: #2D7158;
+  color: #035055;
   text-decoration: underline;
 }
 
 .modal-body-title {
   margin-top: -48px;
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2rem;
-  color: #120E00;
+  color: #291F0F;
   margin-bottom: 12px;
 }
 
 .modal-body-text {
   font-size: 1.125rem;
-  color: #120E00;
+  color: #291F0F;
 }
 
 .btn.btn-input.dropdown-toggle.show,
 .btn.btn-input.dropdown-toggle.active,
 .btn.btn-input.dropdown-toggle {
   padding: 0.68rem .125rem 0.68rem 1.25rem;
-  border: 1px solid #A8891A;
+  border: 1px solid #C19D58;
   font-size: 20px;
   line-height: 150%;
   color: #5F5F5F;
@@ -598,7 +610,7 @@ body {
 .btn.btn-input.dropdown-toggle.show:hover,
 .btn.btn-input.dropdown-toggle.active:hover,
 .btn.btn-input.dropdown-toggle:hover {
-  border: 1px solid #A8891A;
+  border: 1px solid #C19D58;
   background-color: transparent !important;
 }
 
@@ -606,7 +618,7 @@ body {
 .btn.btn-input.dropdown-toggle.active:focus,
 .btn.btn-input.dropdown-toggle:focus {
   background-color: transparent !important;
-  border-color: #A8891A;
+  border-color: #C19D58;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(168, 137, 26, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(168, 137, 26, 0.25);
 }
@@ -783,7 +795,7 @@ body {
   color: #5F5F5F;
   text-align: justify;
   font-size: 1.25rem;
-  line-height: 137%;
+  line-height: 140%;
   margin-bottom: 24px;
 }
 
