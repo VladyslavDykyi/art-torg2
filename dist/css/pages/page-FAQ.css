@@ -277,6 +277,22 @@ body {
   background-color: #EDE8E3;
 }
 
+button.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  grid-gap: 12px !important;
+}
+
 .modal-backdrop {
   background: rgba(41, 31, 15, 0.3);
   opacity: 1 !important;
@@ -296,7 +312,8 @@ body {
 .btn-auction {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #F4F8F6;
+  background-color: #F4F8F6 !important;
+  -webkit-appearance: none;
   border-color: #035055;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -325,7 +342,8 @@ body {
 .btn.btn-success {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #056B72;
+  background-color: #056B72 !important;
+  -webkit-appearance: none;
   border-color: #056B72;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -349,7 +367,8 @@ body {
 }
 
 .btn.btn-outline-success {
-  background-color: transparent;
+  background-color: transparent !important;
+  -webkit-appearance: none;
   border-color: #056B72;
   -webkit-border-radius: 0;
           border-radius: 0;

@@ -36,7 +36,7 @@
 		}
 		&-title {
 			font-size: 2rem;
-			color: #120E00;
+			color: #291F0F;
 			margin-bottom: 16px;
 			@media screen and (max-width: 992px) {
 				font-size: 1.75rem;
@@ -50,7 +50,7 @@
 		}
 		&-text p,
 		&-text {
-			color: #5F5F5F;
+			color: #6F6F6F;
 			font-size: 1.125rem;
 			flex-grow: 1;
 			display: -webkit-box;
@@ -68,7 +68,7 @@
 				grid-gap: 12px;
 			}
 			&-data {
-				color: #5F5F5F;
+				color: #6F6F6F;
 				font-size: 1.25rem;
 			}
 			&-link {

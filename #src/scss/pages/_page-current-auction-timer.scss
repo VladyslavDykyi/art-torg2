@@ -130,15 +130,14 @@
 	&-text {
 		margin-bottom: 0;
 		line-height: 150%;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
+	}
+	&-text {
 		overflow: hidden;
-		-webkit-line-clamp: 4;
-		&.active p,
+		max-height: 100px;
 		&.active {
 			display: block;
 			overflow: visible;
-			-webkit-line-clamp: none;
+			max-height: none;
 		}
 	}
 	& .read-more {
@@ -148,5 +147,9 @@
 		text-decoration: none;
 		padding: 0;
 		border: none;
+		display: none !important;
+		&.active {
+			display: flex !important;
+		}
 	}
 }

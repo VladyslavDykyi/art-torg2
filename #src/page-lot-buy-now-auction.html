@@ -230,6 +230,23 @@
 
 <script src="./js/pages/page-slider-lot.min.js"></script>
 <script>
+		const auctionStatusText = document.querySelector('.lot-text-description');
+		const btnReadMore = document.querySelector('[data-id="readMore"]');
+
+		if (auctionStatusText.scrollHeight > 410) {
+			btnReadMore.classList.add('active');
+		}
+
+		btnReadMore.addEventListener('click', function() {
+			auctionStatusText.classList.toggle('active');
+			if (auctionStatusText.classList.contains('active')) {
+				btnReadMore.innerHTML = 'Read Less <i class="bi bi-chevron-up"></i>';
+			} else {
+				btnReadMore.innerHTML = 'Read More <i class="bi bi-chevron-down"></i>';
+			}
+		});
+</script>
+<script>
 	$('.select2-theme').select2({
 		minimumResultsForSearch: -1,
 		placeholder: "Theme",

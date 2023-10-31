@@ -44,11 +44,4 @@
 			swiper: swiperNav,
 		},
 	});
-	const btnReadMore = document.querySelector('[data-id="readMore"]');
-	btnReadMore.addEventListener('click',(e) => {
-		e.stopPropagation();
-		e.preventDefault();
-		btnReadMore.classList.toggle('active');
-		btnReadMore.parentElement.previousElementSibling.classList.toggle('active');
-	})
 })();

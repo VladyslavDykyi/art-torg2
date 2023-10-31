@@ -5,6 +5,22 @@ body {
   background-color: #EDE8E3;
 }
 
+button.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  grid-gap: 12px !important;
+}
+
 .modal-backdrop {
   background: rgba(41, 31, 15, 0.3);
   opacity: 1 !important;
@@ -24,7 +40,8 @@ body {
 .btn-auction {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #F4F8F6;
+  background-color: #F4F8F6 !important;
+  -webkit-appearance: none;
   border-color: #035055;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -53,7 +70,8 @@ body {
 .btn.btn-success {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #056B72;
+  background-color: #056B72 !important;
+  -webkit-appearance: none;
   border-color: #056B72;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -77,7 +95,8 @@ body {
 }
 
 .btn.btn-outline-success {
-  background-color: transparent;
+  background-color: transparent !important;
+  -webkit-appearance: none;
   border-color: #056B72;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -304,6 +323,20 @@ span.nav-link:hover {
 
 .breadcrumb-item.active {
   color: #291F0F;
+}
+
+.variation-auction {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.variation-auction > * {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 content;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
 }
 
 .auction-list {
@@ -1277,15 +1310,28 @@ span.nav-link:hover {
   color: #291F0F;
   font-size: 1.125rem;
   margin-bottom: 2px;
-  display: -webkit-box;
-  -webkit-line-clamp: 15;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
-.lot-text-description p.active,
+.lot-text-description {
+  overflow: hidden;
+  max-height: 410px;
+}
+
 .lot-text-description.active {
-  -webkit-line-clamp: 1000;
+  display: block;
+  overflow: visible;
+  max-height: none;
+}
+
+.lot [data-id="readMore"] {
+  display: none !important;
+}
+
+.lot [data-id="readMore"].active {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .lot-modal {

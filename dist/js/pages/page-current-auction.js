@@ -20,9 +20,4 @@
 			},
 		},
 	});
-	const btnReadMore = document.querySelector('.read-more');
-	btnReadMore.addEventListener('click', () => {
-		const auctionStatusText = document.querySelector('.auction-status-text');
-		auctionStatusText.classList.toggle('active');
-	});
 })()

@@ -37,6 +37,26 @@
 
 <script src="./js/pages/page-current-auction.min.js"></script>
 <script>
+	const auctionStatusText = document.querySelector('.auction-status-text');
+	const btnReadMore = document.querySelector('.read-more');
+
+	if (auctionStatusText.scrollHeight > auctionStatusText.clientHeight) {
+		btnReadMore.classList.add(`active`);
+	}
+
+	btnReadMore.addEventListener('click', function() {
+		if (auctionStatusText.classList.contains('active')) {
+			auctionStatusText.style.maxHeight = '100px';
+			auctionStatusText.classList.remove('active');
+			btnReadMore.innerHTML = 'Read More';
+		} else {
+			auctionStatusText.style.maxHeight = auctionStatusText.scrollHeight + 'px';
+			auctionStatusText.classList.add('active');
+			btnReadMore.innerHTML = 'Read Less';
+		}
+	});
+</script>
+<script>
 	$('.select2-modal-wrapper').select2({
 		minimumResultsForSearch: -1,
 		placeholder: "Country",

@@ -1,0 +1,6 @@
+.variation-auction {
+	justify-content: center;
+	& > * {
+		flex: 0 1 content;
+	}
+}

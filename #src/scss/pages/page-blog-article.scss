@@ -9,6 +9,7 @@
 	margin-bottom: 36px;
 	& h1 {
 		margin-bottom: 24px;
+		font-size: 2.25em;
 	}
 	& picture {
 		display: block;
@@ -19,20 +20,20 @@
 		}
 	}
 	& p {
-		color: #5F5F5F;
+		color: #6F6F6F;
 		text-align: justify;
 		font-size: 1.25rem;
 		line-height: 140%;
 		margin-bottom: 24px;
 	}
 	& a {
-		color: #2D7158;
+		color: #056B72;
 		&:hover {
-			color: #409B7A;
+			color: #05868E;
 			text-decoration: none;
 		}
 		&:active {
-			color: #29654F;
+			color: #035055;
 			text-decoration: underline;
 		}
 	}
@@ -40,7 +41,7 @@
 		display: inline-block;
 		margin-bottom: 24px;
 		font-size: 1.5rem;
-		color: #5F5F5F;
+		color: #6F6F6F;
 	}
 }
 .blog {
@@ -62,11 +63,11 @@
 	}
 	&-item {
 		&-title {
-			color: #120E00;
+			color: #291F0F;
 			margin-bottom: 16px;
 		}
 		&-text {
-			color: #5F5F5F;
+			color: #6F6F6F;
 			flex-grow: 1;
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
@@ -81,7 +82,7 @@
 				grid-gap: 12px;
 			}
 			&-data {
-				color: #5F5F5F;
+				color: #6F6F6F;
 			}
 			&-link {
 				width: 100%;
