@@ -1,9 +1,10 @@
 @import "_header";
 @import "_breadcrumb";
 @import "_footer";
-@import "_default";
+
 @import "_modal";
 @import "_select2";
+@import "_default";
 .personal-data {
 	&-links {
 		max-width: 600px;
@@ -11,7 +12,7 @@
 		padding-bottom: 20px;
 		& a.btn {
 			max-width: 200px;
-			color: #5F5F5F;
+			color: #6F6F6F;
 			border-radius: 4px;
 			font-size: 1.25rem;
 			padding: .688rem .75rem;
@@ -34,30 +35,30 @@
 		align-items: center;
 		grid-gap: 18px;
 		&-back {
-			color: #120E00;
+			color: #291F0F;
 			&:hover {
-				color: #409B7A;
+				color: #05868E;
 			}
 			&:active {
-				color: #29654F;
+				color: #035055;
 			}
 		}
 		&-btn {
-			color: #2D7158;
+			color: #056B72;
 			font-size: 1.125rem;
 			line-height: 165%;
 			padding: 0;
 			&:hover {
-				color: #409B7A;
+				color: #05868E;
 			}
 			&:active {
-				color: #29654F;
+				color: #035055;
 			}
 		}
 	}
 	&-body {
 		&-title {
-			color: #120E00;
+			color: #291F0F;
 			font-size: 1.25rem;
 			margin-bottom: 12px;
 			@media screen and (max-width: 768px) {
@@ -75,7 +76,7 @@
 		&-message {
 			margin-bottom: 28px;
 			& p {
-				color: #120E00;
+				color: #291F0F;
 				font-size: 1.5rem;
 				@media screen and (max-width: 768px) {
 					font-size: 1.125rem;
@@ -84,8 +85,8 @@
 		}
 		&-marker {
 			border-radius: 4px;
-			border: 1px solid #B7B6B2;
-			background-color: #F4F8F6;
+			border: 1px solid #D2CCC3;
+			background-color: #D2CCC3;
 			padding: 18px;
 			margin-bottom: 20px;
 			& p {
@@ -112,21 +113,22 @@
 }
 .cart-lot {
 	&-title {
-		color: #5F5F5F;
+		color: #6F6F6F;
 		font-size: 1.25rem;
 		font-weight: 700;
 		margin-bottom: 8px;
 	}
 	&-name {
-		color: #120E00;
+		color: #291F0F;
 		font-size: 1.125rem;
 		line-height: 165%;
 		margin-bottom: 4px;
 	}
 	&-data {
-		color: #5F5F5F;
+		color: #6F6F6F;
 		display: block;
 		line-height: 165%;
+		font-weight: 700;
 		margin-bottom: 12px;
 	}
 	& > picture {
@@ -139,19 +141,19 @@
 		object-fit: contain;
 	}
 	&-id {
-		color: #120E00;
+		color: #291F0F;
 		font-size: 1.125rem;
 		line-height: 165%;
 		margin-bottom: 8px;
 	}
 	&-text {
-		color: #5F5F5F;
+		color: #6F6F6F;
 		font-size: 1.125rem;
 		line-height: 165%;
 		margin-bottom: 8px;
 	}
 	&-price {
-		color: #29654F;
+		color: #056B72;
 		margin-bottom: 0;
 	}
 }

@@ -317,7 +317,7 @@ button.btn {
 }
 
 .btn-auction:hover {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   border-color: #056B72;
   color: #FFF;
 }
@@ -329,7 +329,7 @@ button.btn {
 }
 
 .btn-auction:disabled {
-  background-color: #D2CCC3;
+  background-color: #D2CCC3 !important;
   border-color: #D2CCC3;
 }
 
@@ -346,17 +346,17 @@ button.btn {
 }
 
 .btn.btn-success:hover {
-  background-color: #05868E;
+  background-color: #05868E !important;
   border-color: #05868E;
 }
 
 .btn.btn-success:active {
-  background-color: #035055;
+  background-color: #035055 !important;
   border-color: #035055;
 }
 
 .btn.btn-success:disabled {
-  background-color: #D2CCC3;
+  background-color: #D2CCC3 !important;
   border-color: #D2CCC3;
 }
 
@@ -370,19 +370,19 @@ button.btn {
 }
 
 .btn.btn-outline-success:hover {
-  background-color: #068d95;
+  background-color: #068d95 !important;
   border-color: #068d95;
   color: #FFF;
 }
 
 .btn.btn-outline-success:active {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   border-color: #056B72;
   color: #FFF;
 }
 
 .btn.btn-outline-success.active {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   color: #FFF;
 }
 
@@ -620,6 +620,17 @@ button.btn {
   border-width: 0 4px 5px 4px;
 }
 
+.modal .dropdown-menu {
+  border-color: #C19D58;
+}
+
+.modal .dropdown-item:focus,
+.modal .dropdown-item:hover {
+  color: #FFF;
+  background-color: #c19d58;
+}
+
+.modal .select2-container--default .select2-selection--single,
 .modal .form-control.inp {
   background-color: #EDE8E3;
 }
@@ -769,11 +780,23 @@ button.btn {
   -webkit-transform: rotateZ(40deg);
       -ms-transform: rotate(40deg);
           transform: rotateZ(40deg);
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-bottom: 2px solid #EDE8E3;
+  border-right: 2px solid #EDE8E3;
   top: 2px;
   left: 7px;
   z-index: 10;
+}
+
+.modal-body .form-check-label a {
+  color: #056B72;
+}
+
+.modal-body .form-check-label a:hover {
+  color: #056B72;
+}
+
+.modal-body .form-check-label a:focus {
+  color: #035055;
 }
 
 .modal-body .modal-text {
@@ -799,7 +822,6 @@ button.btn {
 
 .modal-body .btn.btn-link {
   color: #056B72;
-  text-decoration: none;
   font-size: 1rem;
   padding: 0;
   border: none;
@@ -824,7 +846,7 @@ button.btn {
 }
 
 .modal-body-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #291F0F;
 }
 
@@ -836,6 +858,8 @@ button.btn {
   font-size: 20px;
   line-height: 150%;
   color: #5F5F5F;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 
 .btn.btn-input.dropdown-toggle.show::-webkit-input-placeholder, .btn.btn-input.dropdown-toggle.active::-webkit-input-placeholder, .btn.btn-input.dropdown-toggle::-webkit-input-placeholder {
@@ -908,6 +932,11 @@ button.btn {
   width: auto;
 }
 
+.title-cart {
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
 .cart-header-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -917,9 +946,9 @@ button.btn {
 }
 
 .cart-header-item {
-  padding: .625rem 1.5rem;
+  padding: .25rem 1.5rem;
   font-size: 1.25rem;
-  color: #120E00;
+  color: #291F0F;
 }
 
 .cart-header-item:first-child {
@@ -960,7 +989,7 @@ button.btn {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #B7B6B2;
+  border-bottom: 1px solid #D2CCC3;
 }
 
 .cart-main-item {
@@ -1007,7 +1036,7 @@ button.btn {
 }
 
 .cart-main-item .btn i {
-  color: #2D7158;
+  color: #035055;
 }
 
 .cart-main-item .btn:hover {
@@ -1015,7 +1044,7 @@ button.btn {
 }
 
 .cart-main-item .btn:hover i {
-  color: #409B7A;
+  color: #056B72;
 }
 
 .cart-main-item .btn:active {
@@ -1023,7 +1052,7 @@ button.btn {
 }
 
 .cart-main-item .btn:active i {
-  color: #29654F;
+  color: #035055;
 }
 
 .cart-main-item img {
@@ -1036,7 +1065,7 @@ button.btn {
 .cart-main-item a {
   text-decoration: none;
   font-size: 1.25rem;
-  color: #120E00;
+  color: #291F0F;
   display: -webkit-inline-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1044,12 +1073,12 @@ button.btn {
 }
 
 .cart-main-item a:hover {
-  color: #409B7A;
+  color: #056B72;
   text-decoration: underline;
 }
 
 .cart-main-item a:active {
-  color: #29654F;
+  color: #035055;
   text-decoration: none;
 }
 
@@ -1075,7 +1104,7 @@ button.btn {
 
 .cart-footer-item {
   padding: 1.5rem 0;
-  color: #120E00;
+  color: #291F0F;
 }
 
 .cart-footer-item .btn {

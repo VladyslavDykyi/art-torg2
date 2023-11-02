@@ -34,7 +34,7 @@ button.btn {
 	color: #035055;
 	width: 100%;
 	&:hover {
-		background-color: #056B72;
+		background-color: #056B72 !important;
 		border-color: #056B72;
 		color: #FFF;
 	}
@@ -44,7 +44,7 @@ button.btn {
 		border-color: #035055 !important;
 	}
 	&:disabled {
-		background-color: #D2CCC3;
+		background-color: #D2CCC3 !important;
 		border-color: #D2CCC3;
 	}
 }
@@ -59,15 +59,15 @@ button.btn {
 	padding: 0.431rem 1rem;
 	color: #FFF;
 	&:hover {
-		background-color: #05868E;
+		background-color: #05868E !important;
 		border-color: #05868E;
 	}
 	&:active {
-		background-color: #035055;
+		background-color: #035055 !important;
 		border-color: #035055;
 	}
 	&:disabled {
-		background-color: #D2CCC3;
+		background-color: #D2CCC3 !important;
 		border-color: #D2CCC3;
 	}
 }
@@ -78,17 +78,17 @@ button.btn {
 	border-radius: 0;
 	color: #056B72;
 	&:hover {
-		background-color: #068d95;
+		background-color: #068d95 !important;
 		border-color: #068d95;
 		color: #FFF;
 	}
 	&:active {
-		background-color: #056B72;
+		background-color: #056B72 !important;
 		border-color: #056B72;
 		color: #FFF;
 	}
 	&.active {
-		background-color: #056B72;
+		background-color: #056B72 !important;
 		color: #FFF;
 	}
 }

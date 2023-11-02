@@ -252,7 +252,7 @@ button.btn {
 }
 
 .btn-auction:hover {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   border-color: #056B72;
   color: #FFF;
 }
@@ -264,7 +264,7 @@ button.btn {
 }
 
 .btn-auction:disabled {
-  background-color: #D2CCC3;
+  background-color: #D2CCC3 !important;
   border-color: #D2CCC3;
 }
 
@@ -281,17 +281,17 @@ button.btn {
 }
 
 .btn.btn-success:hover {
-  background-color: #05868E;
+  background-color: #05868E !important;
   border-color: #05868E;
 }
 
 .btn.btn-success:active {
-  background-color: #035055;
+  background-color: #035055 !important;
   border-color: #035055;
 }
 
 .btn.btn-success:disabled {
-  background-color: #D2CCC3;
+  background-color: #D2CCC3 !important;
   border-color: #D2CCC3;
 }
 
@@ -305,19 +305,19 @@ button.btn {
 }
 
 .btn.btn-outline-success:hover {
-  background-color: #068d95;
+  background-color: #068d95 !important;
   border-color: #068d95;
   color: #FFF;
 }
 
 .btn.btn-outline-success:active {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   border-color: #056B72;
   color: #FFF;
 }
 
 .btn.btn-outline-success.active {
-  background-color: #056B72;
+  background-color: #056B72 !important;
   color: #FFF;
 }
 
@@ -376,6 +376,17 @@ button.btn {
   line-height: normal;
 }
 
+.modal .dropdown-menu {
+  border-color: #C19D58;
+}
+
+.modal .dropdown-item:focus,
+.modal .dropdown-item:hover {
+  color: #FFF;
+  background-color: #c19d58;
+}
+
+.modal .select2-container--default .select2-selection--single,
 .modal .form-control.inp {
   background-color: #EDE8E3;
 }
@@ -525,11 +536,23 @@ button.btn {
   -webkit-transform: rotateZ(40deg);
       -ms-transform: rotate(40deg);
           transform: rotateZ(40deg);
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-bottom: 2px solid #EDE8E3;
+  border-right: 2px solid #EDE8E3;
   top: 2px;
   left: 7px;
   z-index: 10;
+}
+
+.modal-body .form-check-label a {
+  color: #056B72;
+}
+
+.modal-body .form-check-label a:hover {
+  color: #056B72;
+}
+
+.modal-body .form-check-label a:focus {
+  color: #035055;
 }
 
 .modal-body .modal-text {
@@ -555,7 +578,6 @@ button.btn {
 
 .modal-body .btn.btn-link {
   color: #056B72;
-  text-decoration: none;
   font-size: 1rem;
   padding: 0;
   border: none;
@@ -580,7 +602,7 @@ button.btn {
 }
 
 .modal-body-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #291F0F;
 }
 
@@ -592,6 +614,8 @@ button.btn {
   font-size: 20px;
   line-height: 150%;
   color: #5F5F5F;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 
 .btn.btn-input.dropdown-toggle.show::-webkit-input-placeholder, .btn.btn-input.dropdown-toggle.active::-webkit-input-placeholder, .btn.btn-input.dropdown-toggle::-webkit-input-placeholder {
@@ -792,23 +816,33 @@ button.btn {
   border-width: 0 4px 5px 4px;
 }
 
+.select2-container--default .select2-selection--single {
+  background-color: #EDE8E3;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #FFF;
+  background-color: #c19d58;
+}
+
 .cart-lots {
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  border: 1px solid #B7B6B2;
+  border: 1px solid #D2CCC3;
   padding: 20px 20px 55px;
 }
 
 .cart-lots .cart-lots-shipping.disabled > span:last-child {
-  color: #B7B6B2;
+  color: #D2CCC3;
 }
 
 .cart-lots .cart-lots-total-cost.disabled > span:last-child {
-  color: #B7B6B2;
+  color: #D2CCC3;
 }
 
 .cart-lots .cart-lots-cost.disabled > span:last-child {
-  color: #B7B6B2;
+  color: #D2CCC3;
 }
 
 .cart-lots-cost {
@@ -829,15 +863,16 @@ button.btn {
 }
 
 .cart-lots-cost span:first-child {
-  color: #5F5F5F;
+  color: #6F6F6F;
   font-size: 1.25rem;
   line-height: 150%;
 }
 
 .cart-lots-cost span:last-child {
-  color: #120E00;
+  color: #291F0F;
   font-size: 1.5rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .cart-lots-shipping {
@@ -858,7 +893,7 @@ button.btn {
           justify-content: space-between;
   grid-gap: 8px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #B7B6B2;
+  border-bottom: 1px solid #D2CCC3;
   margin-bottom: 32px;
 }
 
@@ -867,7 +902,7 @@ button.btn {
   -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
-  color: #5F5F5F;
+  color: #6F6F6F;
   font-size: 1.25rem;
   line-height: 150%;
 }
@@ -877,7 +912,7 @@ button.btn {
   -webkit-flex: 0 1 -webkit-calc(65% - 4px);
       -ms-flex: 0 1 calc(65% - 4px);
           flex: 0 1 calc(65% - 4px);
-  color: #5F5F5F;
+  color: #6F6F6F;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 150%;
@@ -889,9 +924,10 @@ button.btn {
       -ms-flex: 0 1 calc(35% - 4px);
           flex: 0 1 calc(35% - 4px);
   text-align: right;
-  color: #120E00;
+  color: #291F0F;
   font-size: 1.5rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .cart-lots-total-cost {
@@ -912,53 +948,58 @@ button.btn {
 }
 
 .cart-lots-total-cost span:first-child {
-  color: #5F5F5F;
+  color: #6F6F6F;
   font-size: 1.25rem;
   line-height: 150%;
 }
 
 .cart-lots-total-cost span:last-child {
-  color: #120E00;
+  color: #291F0F;
   font-size: 1.5rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .btn.btn-success:disabled {
   opacity: 1;
 }
 
+.dropdown-menu.show {
+  border: 1px solid #C19D58;
+}
+
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show,
 .inputs-wrapper .btn.btn-input.dropdown-toggle.active,
 .inputs-wrapper .btn.btn-input.dropdown-toggle {
   padding: 0.68rem .125rem 0.68rem 1.25rem;
-  border: 1px solid #A8891A;
+  border: 1px solid #C19D58;
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show::-webkit-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle.active::-webkit-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle::-webkit-input-placeholder {
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show::-moz-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle.active::-moz-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle::-moz-placeholder {
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show:-ms-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle.active:-ms-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle:-ms-input-placeholder {
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show::-ms-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle.active::-ms-input-placeholder, .inputs-wrapper .btn.btn-input.dropdown-toggle::-ms-input-placeholder {
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show::placeholder,
@@ -966,13 +1007,13 @@ button.btn {
 .inputs-wrapper .btn.btn-input.dropdown-toggle::placeholder {
   font-size: 20px;
   line-height: 150%;
-  color: #5F5F5F;
+  color: #6F6F6F;
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show:hover,
 .inputs-wrapper .btn.btn-input.dropdown-toggle.active:hover,
 .inputs-wrapper .btn.btn-input.dropdown-toggle:hover {
-  border: 1px solid #A8891A;
+  border: 1px solid #C19D58;
   background-color: transparent !important;
 }
 
@@ -980,9 +1021,9 @@ button.btn {
 .inputs-wrapper .btn.btn-input.dropdown-toggle.active:focus,
 .inputs-wrapper .btn.btn-input.dropdown-toggle:focus {
   background-color: transparent !important;
-  border-color: #A8891A;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(168, 137, 26, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(168, 137, 26, 0.25);
+  border-color: #C19D58;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(193, 157, 88, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(193, 157, 88, 0.25);
 }
 
 .inputs-wrapper .btn.btn-input.dropdown-toggle.show:active,
@@ -1005,6 +1046,19 @@ button.btn {
 
 .inp {
   padding: 0.68rem 1.25rem;
+  background-color: #EDE8E3;
+}
+
+.inp:active {
+  background-color: #EDE8E3;
+}
+
+.inp:hover {
+  background-color: #EDE8E3;
+}
+
+.inp:focus {
+  background-color: #EDE8E3;
 }
 
 .delivery .h2-pf {
@@ -1012,7 +1066,7 @@ button.btn {
 }
 
 .delivery-text {
-  color: #120E00;
+  color: #291F0F;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -1055,7 +1109,7 @@ button.btn {
 
 .form-check-label {
   padding-left: 40px;
-  color: #120E00;
+  color: #291F0F;
   font-size: 1.25rem;
   line-height: 165%;
   position: relative;
@@ -1074,7 +1128,7 @@ button.btn {
   display: block;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  border: 1px solid #2D7158;
+  border: 1px solid #056B72;
   top: -webkit-calc(50% - 11px);
   top: calc(50% - 11px);
   left: 0;
@@ -1088,8 +1142,8 @@ button.btn {
   -webkit-transform: rotateZ(40deg);
       -ms-transform: rotate(40deg);
           transform: rotateZ(40deg);
-  border-bottom: 2px solid #2D7158;
-  border-right: 2px solid #2D7158;
+  border-bottom: 2px solid #056B72;
+  border-right: 2px solid #056B72;
   top: -webkit-calc(50% - 9px);
   top: calc(50% - 9px);
   left: 7px;
@@ -1218,22 +1272,88 @@ button.btn {
     padding: 0.68rem;
   }
 
+  .select2-container--default .select2-selection--single {
+    font-size: 1rem;
+  }
+
+  .select2-container--default .select2-selection--single * {
+    font-size: 1rem;
+  }
+
   .cart-lots {
     margin-top: 24px;
+  }
+
+  .cart-lots-cost span:first-child {
+    font-size: 1rem;
+  }
+
+  .cart-lots-cost span:last-child {
+    font-size: 1.125rem;
+  }
+
+  .cart-lots-shipping span:first-child {
+    font-size: 1rem;
+  }
+
+  .cart-lots-shipping span:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .cart-lots-shipping span:last-child {
+    font-size: 1.125rem;
+  }
+
+  .cart-lots-total-cost span:first-child {
+    font-size: 1rem;
+  }
+
+  .cart-lots-total-cost span:last-child {
+    font-size: 1.125rem;
   }
 
   .inputs-wrapper .btn.btn-input.dropdown-toggle.show,
   .inputs-wrapper .btn.btn-input.dropdown-toggle.active,
   .inputs-wrapper .btn.btn-input.dropdown-toggle {
     padding: 0.68rem;
+    font-size: 1rem;
   }
 
   .inp {
     padding: 0.68rem;
+    font-size: 1rem;
+  }
+
+  .inp::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .inp::-moz-placeholder {
+    font-size: 1rem;
+  }
+
+  .inp:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .inp::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  .inp::placeholder {
+    font-size: 1rem;
+  }
+
+  .delivery-text {
+    font-size: 1rem;
   }
 
   .form-check {
     margin-bottom: 12px;
+  }
+
+  .form-check-label {
+    font-size: 1rem;
   }
 }
 
