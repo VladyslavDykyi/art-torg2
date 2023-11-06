@@ -11,6 +11,20 @@ button.btn {
 	justify-content: center !important;
 	grid-gap: 12px !important;
 }
+.card-price-text {
+	white-space: nowrap;
+}
+.swiper.mySwiper-nav {
+	& .swiper-button-next:after, .swiper-button-prev:after {
+		font-size: 24px;
+	}
+	& .swiper-button-next {
+		justify-content: flex-end;
+	}
+	& .swiper-button-prev {
+		justify-content: flex-start;
+	}
+}
 .modal-backdrop {
 	background: rgba(41, 31, 15, 0.30);
 	opacity: 1 !important;

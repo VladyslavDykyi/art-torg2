@@ -80,7 +80,7 @@
 			padding: 13px 22px;
 			display: flex;
 			border-radius: 4px 4px 0 0;
-			border: 1px solid #B7B6B2;
+			border: 1px solid #D2CCC3;
 			border-bottom: none;
 			@media screen and (max-width: 768px) {
 				flex-direction: column;
@@ -117,13 +117,14 @@
 			margin-left: auto;
 			margin-right: 0;
 			color: #291F0F;
+			white-space: nowrap;
 			@media screen and (max-width: 768px) {
 				margin-left: 0;
 			}
 		}
 		&-main {
 			border-radius: 0 0 4px 4px;
-			border: 1px solid #B7B6B2;
+			border: 1px solid #D2CCC3;
 			border-top: none;
 			padding: 24px 22px 16px;
 			@media screen and (max-width: 576px) {

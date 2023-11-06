@@ -25,6 +25,10 @@
 		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesProgress: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
@@ -33,6 +37,7 @@
 				slidesPerView: 4,
 			},
 		},
+
 	});
 	const swiperFor = new Swiper(".mySwiper-for", {
 		loop: true,

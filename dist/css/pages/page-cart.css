@@ -187,6 +187,7 @@ span.nav-link:hover {
 }
 
 .card-price {
+  white-space: nowrap;
   color: #291F0F;
   padding-right: 10px;
   margin-bottom: 7px;
@@ -285,6 +286,29 @@ button.btn {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   grid-gap: 12px !important;
+}
+
+.card-price-text {
+  white-space: nowrap;
+}
+
+.swiper.mySwiper-nav .swiper-button-next:after,
+.swiper.mySwiper-nav .swiper-button-prev:after {
+  font-size: 24px;
+}
+
+.swiper.mySwiper-nav .swiper-button-next {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.swiper.mySwiper-nav .swiper-button-prev {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .modal-backdrop {
@@ -446,6 +470,7 @@ button.btn {
   font-size: 18px;
   line-height: 165.5%;
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .footer a {
@@ -1018,6 +1043,7 @@ button.btn {
       -ms-flex: 0 1 calc(45% - 180px);
           flex: 0 1 calc(45% - 180px);
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 .cart-main-item:last-child {
@@ -1105,6 +1131,7 @@ button.btn {
 .cart-footer-item {
   padding: 1.5rem 0;
   color: #291F0F;
+  font-size: 1.5rem;
 }
 
 .cart-footer-item .btn {
@@ -1115,6 +1142,7 @@ button.btn {
 .cart-footer-item span {
   font-size: 2rem;
   margin-left: 8px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1304,8 +1332,12 @@ button.btn {
     font-size: 1rem;
   }
 
+  .cart-footer-item {
+    font-size: 1.125rem;
+  }
+
   .cart-footer-item span {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 

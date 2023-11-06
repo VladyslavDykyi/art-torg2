@@ -186,6 +186,7 @@ span.nav-link:hover {
   font-size: 18px;
   line-height: 165.5%;
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .footer a {
@@ -253,6 +254,29 @@ button.btn {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   grid-gap: 12px !important;
+}
+
+.card-price-text {
+  white-space: nowrap;
+}
+
+.swiper.mySwiper-nav .swiper-button-next:after,
+.swiper.mySwiper-nav .swiper-button-prev:after {
+  font-size: 24px;
+}
+
+.swiper.mySwiper-nav .swiper-button-next {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.swiper.mySwiper-nav .swiper-button-prev {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .modal-backdrop {
@@ -925,7 +949,7 @@ button.btn {
   display: flex;
   -webkit-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0;
-  border: 1px solid #B7B6B2;
+  border: 1px solid #D2CCC3;
   border-bottom: none;
 }
 
@@ -958,12 +982,13 @@ button.btn {
   margin-left: auto;
   margin-right: 0;
   color: #291F0F;
+  white-space: nowrap;
 }
 
 .orders-item-main {
   -webkit-border-radius: 0 0 4px 4px;
           border-radius: 0 0 4px 4px;
-  border: 1px solid #B7B6B2;
+  border: 1px solid #D2CCC3;
   border-top: none;
   padding: 24px 22px 16px;
 }

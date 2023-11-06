@@ -261,10 +261,17 @@
 		}
 	}
 }
-
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+	right: 0;
+	left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+	left: 0;
+	right: auto;
+}
 .mySwiper-nav {
 	& picture {
-		padding: 0 12px;
+		padding: 0 20px;
 		display: block;
 		height: 140px;
 		width: 100%;

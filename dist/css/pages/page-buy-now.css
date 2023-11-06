@@ -187,6 +187,7 @@ span.nav-link:hover {
 }
 
 .card-price {
+  white-space: nowrap;
   color: #291F0F;
   padding-right: 10px;
   margin-bottom: 7px;
@@ -285,6 +286,29 @@ button.btn {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   grid-gap: 12px !important;
+}
+
+.card-price-text {
+  white-space: nowrap;
+}
+
+.swiper.mySwiper-nav .swiper-button-next:after,
+.swiper.mySwiper-nav .swiper-button-prev:after {
+  font-size: 24px;
+}
+
+.swiper.mySwiper-nav .swiper-button-next {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.swiper.mySwiper-nav .swiper-button-prev {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .modal-backdrop {
@@ -446,6 +470,7 @@ button.btn {
   font-size: 18px;
   line-height: 165.5%;
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .footer a {

@@ -60,7 +60,6 @@
 <script>
 	const auctionStatusText = document.querySelector('.auction-status-text');
 	const btnReadMore = document.querySelector('.read-more');
-	console.log( auctionStatusText.scrollHeight);
 	if (auctionStatusText.scrollHeight > auctionStatusText.clientHeight) {
 		btnReadMore.classList.add(`active`);
 	}
@@ -82,14 +81,7 @@
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
 	});
-	// 05.07.23
 	$('.select-author').select2();
-	// 06.07.23
-	const btnReadMore = document.querySelector('.read-more');
-	btnReadMore.addEventListener('click', () => {
-		const auctionStatusText = document.querySelector('.auction-status-text');
-		auctionStatusText.classList.toggle('active');
-	});
 </script>
 </body>
 </html>

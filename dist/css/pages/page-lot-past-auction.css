@@ -21,6 +21,29 @@ button.btn {
   grid-gap: 12px !important;
 }
 
+.card-price-text {
+  white-space: nowrap;
+}
+
+.swiper.mySwiper-nav .swiper-button-next:after,
+.swiper.mySwiper-nav .swiper-button-prev:after {
+  font-size: 24px;
+}
+
+.swiper.mySwiper-nav .swiper-button-next {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.swiper.mySwiper-nav .swiper-button-prev {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .modal-backdrop {
   background: rgba(41, 31, 15, 0.3);
   opacity: 1 !important;
@@ -417,6 +440,7 @@ span.nav-link:hover {
   overflow: hidden;
   -webkit-line-clamp: 2;
   text-decoration: none;
+  font-size: 1.25rem;
 }
 
 .card.auction .card-title:hover {
@@ -580,6 +604,7 @@ span.nav-link:hover {
 }
 
 .card-price {
+  white-space: nowrap;
   color: #291F0F;
   padding-right: 10px;
   margin-bottom: 7px;
@@ -683,6 +708,7 @@ span.nav-link:hover {
   font-size: 18px;
   line-height: 165.5%;
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .footer a {
@@ -1416,8 +1442,20 @@ span.nav-link:hover {
   height: 100%;
 }
 
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 0;
+  left: auto;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 0;
+  right: auto;
+}
+
 .mySwiper-nav picture {
-  padding: 0 12px;
+  padding: 0 20px;
   display: block;
   height: 140px;
   width: 100%;
