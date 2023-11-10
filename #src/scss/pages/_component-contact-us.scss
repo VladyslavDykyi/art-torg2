@@ -10,7 +10,7 @@
 		color: #056B72;
 	}
 	&-form {
-		& .contact-form-input:nth-child(1) label {
+		& .contact-form-input:nth-of-type(1) .form-label {
 			position: absolute;
 			width: 1px;
 			height: 1px;
@@ -25,7 +25,7 @@
 				padding-top: 12px;
 			}
 		}
-		& .contact-form-input:nth-child(2) label {
+		& .contact-form-input:nth-of-type(2) .form-label {
 			position: absolute;
 			width: 1px;
 			height: 1px;

@@ -157,7 +157,7 @@ span.nav-link:hover {
   color: #056B72;
 }
 
-.contact-form .contact-form-input:nth-child(1) label {
+.contact-form .contact-form-input:nth-of-type(1) .form-label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -169,7 +169,7 @@ span.nav-link:hover {
   border: 0;
 }
 
-.contact-form .contact-form-input:nth-child(2) label {
+.contact-form .contact-form-input:nth-of-type(2) .form-label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1048,7 +1048,7 @@ button.btn {
 }
 
 @media screen and (max-width: 768px) {
-  .contact-form .contact-form-input:nth-child(2) label {
+  .contact-form .contact-form-input:nth-of-type(2) .form-label {
     position: relative;
     padding-top: 12px;
   }
@@ -1078,7 +1078,7 @@ button.btn {
     height: auto;
   }
 
-  .contact-form .contact-form-input:nth-child(1) label {
+  .contact-form .contact-form-input:nth-of-type(1) .form-label {
     position: relative;
     padding-top: 12px;
   }
