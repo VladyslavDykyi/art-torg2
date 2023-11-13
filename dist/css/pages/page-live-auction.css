@@ -841,7 +841,7 @@ button.btn {
 }
 
 .progress {
-  margin-top: 16px;
+  margin-top: 8px;
   background-color: rgba(207, 51, 30, 0.05);
 }
 
@@ -866,7 +866,7 @@ button.btn {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   border: 1px solid #D2CCC3;
-  max-height: 684px;
+  max-height: 541px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -990,7 +990,7 @@ button.btn {
   font-size: 2rem;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .auction-current-lot-slider {
@@ -1058,7 +1058,7 @@ button.btn {
   color: #056B72;
   font-size: 1.5rem;
   line-height: normal;
-  margin-top: 52px;
+  margin-top: 22px;
   margin-bottom: 12px;
   text-align: right;
 }
@@ -1090,7 +1090,7 @@ button.btn {
 
 .auction-form-wrapper .btn-danger {
   height: 100%;
-  min-width: 160px;
+  min-width: 180px;
 }
 
 .auction-form-item:last-child .btn-danger {
@@ -1132,11 +1132,11 @@ button.btn {
   text-align: right;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  padding: 21px 42px 21px 32px;
+  padding: 15px 42px 15px 32px;
   border: 1px solid #D2CCC3;
   background-color: #EDE8E3;
   color: #291F0F;
-  font-size: 2.75rem;
+  font-size: 2.275rem;
   line-height: normal;
   width: -webkit-calc(100% - 55px);
   width: calc(100% - 55px);
