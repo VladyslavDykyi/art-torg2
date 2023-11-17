@@ -255,6 +255,7 @@ header a.buy-now {
 
 .link-support > a {
   color: inherit;
+  text-wrap: nowrap;
 }
 
 .nav-link:focus,
@@ -1584,6 +1585,10 @@ span.nav-link:hover {
 @media screen and (max-width: 768px) {
   .h2-pf {
     font-size: 1.5rem;
+  }
+
+  .link-support {
+    text-align: center;
   }
 
   .bloc-now hr {

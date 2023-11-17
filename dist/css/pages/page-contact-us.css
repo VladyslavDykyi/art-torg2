@@ -55,6 +55,7 @@ header a.buy-now {
 
 .link-support > a {
   color: inherit;
+  text-wrap: nowrap;
 }
 
 .nav-link:focus,
@@ -1084,6 +1085,10 @@ button.btn {
 }
 
 @media screen and (max-width: 768px) {
+  .link-support {
+    text-align: center;
+  }
+
   .contact-form .contact-form-input:nth-of-type(2) .form-label {
     position: relative;
     padding-top: 12px;

@@ -55,6 +55,7 @@ header a.buy-now {
 
 .link-support > a {
   color: inherit;
+  text-wrap: nowrap;
 }
 
 .nav-link:focus,
@@ -1145,12 +1146,6 @@ button.btn {
 
 .carousel-main .live {
   color: #BF1616;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1286,6 +1281,10 @@ button.btn {
 }
 
 @media screen and (max-width: 768px) {
+  .link-support {
+    text-align: center;
+  }
+
   .art {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

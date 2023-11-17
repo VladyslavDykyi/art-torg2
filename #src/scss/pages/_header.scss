@@ -77,8 +77,12 @@ header a.buy-now {
 }
 .link-support {
 	color: #120E00;
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
 	& > a {
 		color: inherit;
+		text-wrap: nowrap;
 	}
 }
 .nav-link:focus, .nav-link:hover {

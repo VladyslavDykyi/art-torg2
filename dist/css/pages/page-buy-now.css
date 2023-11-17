@@ -55,6 +55,7 @@ header a.buy-now {
 
 .link-support > a {
   color: inherit;
+  text-wrap: nowrap;
 }
 
 .nav-link:focus,
@@ -1069,6 +1070,10 @@ button.btn {
 }
 
 @media screen and (max-width: 768px) {
+  .link-support {
+    text-align: center;
+  }
+
   .bloc-now hr {
     margin: 25px 0 35px;
   }
