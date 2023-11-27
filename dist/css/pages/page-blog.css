@@ -241,6 +241,10 @@ body {
   background-color: #EDE8E3;
 }
 
+.c-red {
+  color: #BF1616 !important;
+}
+
 button.btn {
   display: -webkit-box;
   display: -webkit-flex;
