@@ -15,12 +15,12 @@
 	messageList.scrollTo(0, messageList.scrollHeight);
 
 
-
-
-	// window.addEventListener('DOMContentLoaded', ()=> {
-	// 	const messageItem = document.querySelector('.auction-list .current-lot');
-	// 	messageItem.scrollIntoView({behavior: 'auto', block:'start'});
-	// })
+	if(window.visualViewport.width >= 1024) {
+		window.addEventListener('DOMContentLoaded', ()=> {
+			const messageItem = document.querySelector('.auction-list .current-lot');
+			messageItem.scrollIntoView({behavior: 'auto', block:'start'});
+		})
+	}
 	// const auctionList = document.querySelector('.auction-list');
 	//
 	// const currentLot = document.querySelector('.auction-lot.current-lot');
