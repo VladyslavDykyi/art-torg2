@@ -1,0 +1,102 @@
+<!-- 06.02.2024 модалка її ід неповинен дублюватись  -->
+<div class="modal fade" id="exampleModalToggle20" aria-hidden="true" aria-labelledby="exampleModalToggleLabel20"
+	 tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered modal-xs">
+		<div class="modal-content increase">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<h2 class="modal-body-title text-center">Place bid</h2>
+						<p class="modal-body-text text-center">Enter the highest amount you`re willing to bid. We`ll bid
+							incrementally to keep you in the lead.</p>
+						<form class="increase-form" action="#" id="increase-bid">
+							<div class="row align-items-center">
+								<div class="col-6 mb-4">
+									<!-- 06.02.2024 for повинен з силатись на ід свого select2  -->
+									<label class="fs-6" for="mySelect-increase">
+										Maximum Bid
+									</label>
+								</div>
+								<div class="col-6 inputs-wrapper mb-4">
+									<!-- 06.02.2024 ід select2 не повинен повторюватись -->
+									<select class="mySelect-increase" id="mySelect-increase">
+										<option value="option1">$ 100</option>
+										<option value="option2">$ 125</option>
+										<option value="option2">$ 150</option>
+									</select>
+								</div>
+							</div>
+							<div class="row align-items-baseline">
+								<div class="col-6">
+									<p class="fs-6">
+										Buyer`s Premium
+									</p>
+								</div>
+								<div class="col-6">
+									<p class="fs-5">
+										$30 (30%)
+									</p>
+								</div>
+							</div>
+							<div class="row align-items-baseline">
+								<div class="col-6">
+									<p class="fs-6">
+										Subtotal
+									</p>
+								</div>
+								<div class="col-6">
+									<p class="fs-5">
+										$130
+									</p>
+								</div>
+							</div>
+							<div class="">
+								<p class="modal-body-text mt-4">
+									Tax, shipping, or transaction fees may be added to the total after you win.
+								</p>
+							</div>
+						</form>
+						<button class="btn btn-success mt-4" form="increase-bid" type="button" data-bs-target="#exampleModalToggle21" data-bs-toggle="modal">
+							Submit bid
+						</button>
+						<p class="modal-body-text mt-4 text-center">By clicking "Submit Bid" you agree yo this auction`s
+							<a class="modal-body-text" href="#">Terms of Sale</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="exampleModalToggle21" aria-hidden="true" aria-labelledby="exampleModalToggleLabel21"
+	 tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered modal-xs">
+		<div class="modal-content increase">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<h2 class="modal-body-title text-center">You are the Leading Bidder!</h2>
+						<p class="modal-body-text text-center">Thank you for the bid!</p>
+						<button class="btn btn-success mt-4" form="notify" type="submit">
+							Close
+						</button>
+						<form class="row justify-content-center" action="#" id="notify">
+							<div class="col-md-7 form-check">
+								<input class="form-check-input" type="checkbox" name="business" id="business">
+								<label class="form-check-label" for="business">
+									Notify me when I`m outbid
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

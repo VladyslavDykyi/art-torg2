@@ -47,6 +47,16 @@
 		& .btn-close {
 			 opacity: 1;
 		}
+		&.increase {
+			height: auto;
+			& .modal-body {
+				margin-top: 0;
+				padding: 0 30px 16px;
+				&-title {
+					margin-top: 0;
+				}
+			}
+		}
 	}
 	&-header {
 		border-bottom: none;
@@ -177,6 +187,12 @@
 			@media screen and (max-width: 992px) {
 				margin-top: 0;
 				font-size: 1.75rem;
+			}
+		}
+		& a.modal-body-text {
+			color: #056B72;
+			&:hover {
+				color: #05868E;
 			}
 		}
 		&-text {

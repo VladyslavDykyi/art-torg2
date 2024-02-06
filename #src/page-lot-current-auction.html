@@ -257,6 +257,7 @@
 </main>
 @@include('./html/_footer.html')
 @@include('./html/_modal-login-registr-pas.html')
+@@include('./html/_modal-pay-lot.html')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -289,6 +290,10 @@
 	$('.select2-modal-wrapper').select2({
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
+	});
+	<!-- 06.02.2024 ініціалізація select2 для модалки ставки -->
+	$('.mySelect-increase').select2({
+		minimumResultsForSearch: -1,
 	});
 </script>
 </body>

@@ -8,6 +8,12 @@
 		</div>
 		<div class="col-12 col-lg-7 mb-5">
 			<div class="swiper mySwiper-for">
+				<div class="favorite">
+					<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+					<button class="favorite-btn " type="button">
+						<i class="bi bi-heart-fill"></i>
+					</button>
+				</div>
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="./img/image.png" alt="">
@@ -52,26 +58,40 @@
 		</div>
 		<div class="col-12 col-lg-5 mb-5">
 			<div class="lot-info d-flex justify-content-between align-items-baseline">
-				<h3 class="fs-4 card-price-text">
-					Estimate: 500£ - 1 500£
+				<h3 class="fs-4">
+					Estimate: 500$ - 1 500$
 				</h3>
 				<p class="timer">
 					Start in: 9 d 5 h 24 m
 				</p>
 			</div>
-			<p class="lot-label">Starting Bid</p>
-			<div class="lot-price">
-				<p class=" card-price-text">4 500£</p>
-				<span>3 Bids</span>
+			<!-- 30.01.2024 доданий блок -->
+			<div class="lot-info-bid green">
+				<p>
+					you`re the leading bidder!
+				</p>
 			</div>
-			<form class="lot-form" action="#">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Enter 4500£ or more">
-					<!--	<a class="btn btn-success" href="#">Register to Bid</a>-->
-					<button class="btn btn-success" type="submit">Place a Bid</button>
-					<!--	чи посилання на рег чи кнопка-->
-				</div>
-			</form>
+			<div class="lot-info-bid red">
+				<p>
+					sorry, your bid lost.
+				</p>
+			</div>
+			<div class="lot-info-bid red">
+				<p>
+					you`ve been outbid!
+				</p>
+			</div>
+			<p class="lot-label-info">
+				Current Price (3 bids)
+			</p>
+			<div class="lot-price">
+				<p>4 500$</p>
+			</div>
+			<button class="lot-btn-buy  btn btn-success"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Place a Bid</button>
+			<!-- 30.01.2024 доданий блок -->
+			<p class="lot-label-info">
+				7 bidders are watching this item.
+			</p>
 			<h2 class="lot-title-auction fs-4">Auction Description</h2>
 			<div class="lot-description">
 				<img class="lot-description-img" src="./img/image11.jpg" alt="">

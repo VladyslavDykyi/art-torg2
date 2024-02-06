@@ -6,9 +6,14 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Page-home</title>
-	@@include('./_head-fonts.html')
+	<link rel="apple-touch-icon" href="https://art-torg.com/wp-content/uploads/2020/07/fav2-1.png">
+	<link rel="shortcut icon" type="image/x-icon" href="https://art-torg.com/wp-content/uploads/2020/07/fav2-1.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@500;600&display=swap"
+		  rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -19,7 +24,7 @@
 @@include('./html/_header.html')
 <main class="wrapper flex-grow-1">
 	@@include('./html/_breadcrumb.html')
-	@@include('./html/_page-lot-buy-now-auction.html')
+	@@include('./html/_page-lot-bid-lost.html')
 	<div class="container-xxl">
 		<div class="row interested-slider">
 			<div class="col-12">
@@ -33,7 +38,215 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
 								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+									<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+									<button class="favorite-btn " type="button">
+										<i class="bi bi-heart-fill"></i>
+									</button>
+								</div>
+								<div class="card auction">
+									<div class="carousel carousel-dark slide" data-id="1">
+										<div class="carousel-inner">
+											<a class="carousel-item active" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+										</div>
+										<button class="carousel-control-prev" type="button"
+												data-bs-target="[data-id='1']" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+												data-bs-target="[data-id='1']" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+										<!-- 06.02.2024 показник аукціону Leading -->
+										<div class="marker-leading">
+											Leading
+										</div>
+										<!--  06.02.2024 показник аукціону Outbid -->
+										<!--										<div class="marker-outbid">-->
+										<!--											Outbid-->
+										<!--										</div>-->
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fs-4">Javier Crus</h5>
+										<p class="card-text fs-5">Dancing Dreams</p>
+										<!-- 06.02.2024 змінився блок -->
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<p class="card-price fs-2 mb-0">500$</p>
+											<p class=" mb-0">(3 bids)</p>
+										</div>
+										<!-- кожна така кнопка повина ссилатись на свою модалку по ід -->
+										<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
+								<div class="favorite">
+									<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+									<button class="favorite-btn " type="button">
+										<i class="bi bi-heart-fill"></i>
+									</button>
+								</div>
+								<div class="card auction">
+									<div class="carousel carousel-dark slide" data-id="2">
+										<div class="carousel-inner">
+											<a class="carousel-item active" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+										</div>
+										<button class="carousel-control-prev" type="button"
+												data-bs-target="[data-id='2']" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+												data-bs-target="[data-id='2']" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+										<!-- 06.02.2024 показник аукціону Leading -->
+										<div class="marker-leading">
+											Leading
+										</div>
+										<!--  06.02.2024 показник аукціону Outbid -->
+										<!--										<div class="marker-outbid">-->
+										<!--											Outbid-->
+										<!--										</div>-->
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fs-4">Javier Crus</h5>
+										<p class="card-text fs-5">Dancing Dreams</p>
+										<!-- 06.02.2024 змінився блок -->
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<p class="card-price fs-2 mb-0">500$</p>
+											<p class=" mb-0">(3 bids)</p>
+										</div>
+										<!-- кожна така кнопка повина ссилатись на свою модалку по ід -->
+										<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
+								<div class="favorite">
+									<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+									<button class="favorite-btn " type="button">
+										<i class="bi bi-heart-fill"></i>
+									</button>
+								</div>
+								<div class="card auction">
+									<div class="carousel carousel-dark slide" data-id="3">
+										<div class="carousel-inner">
+											<a class="carousel-item active" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+										</div>
+										<button class="carousel-control-prev" type="button"
+												data-bs-target="[data-id='3']" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+												data-bs-target="[data-id='3']" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+										<!-- 06.02.2024 показник аукціону Leading -->
+										<div class="marker-leading">
+											Leading
+										</div>
+										<!--  06.02.2024 показник аукціону Outbid -->
+										<!--										<div class="marker-outbid">-->
+										<!--											Outbid-->
+										<!--										</div>-->
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fs-4">Javier Crus</h5>
+										<p class="card-text fs-5">Dancing Dreams</p>
+										<!-- 06.02.2024 змінився блок -->
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<p class="card-price fs-2 mb-0">500$</p>
+											<p class=" mb-0">(3 bids)</p>
+										</div>
+										<!-- кожна така кнопка повина ссилатись на свою модалку по ід -->
+										<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
+								<div class="favorite">
+									<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+									<button class="favorite-btn " type="button">
+										<i class="bi bi-heart-fill"></i>
+									</button>
+								</div>
+								<div class="card auction">
+									<div class="carousel carousel-dark slide" data-id="4">
+										<div class="carousel-inner">
+											<a class="carousel-item active" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+											<a class="carousel-item" href="#">
+												<img src="./img/image.png" class="card-img-top" alt="">
+											</a>
+										</div>
+										<button class="carousel-control-prev" type="button"
+												data-bs-target="[data-id='4']" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+												data-bs-target="[data-id='4']" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+										<!-- 06.02.2024 показник аукціону Leading -->
+										<div class="marker-leading">
+											Leading
+										</div>
+										<!--  06.02.2024 показник аукціону Outbid -->
+										<!--										<div class="marker-outbid">-->
+										<!--											Outbid-->
+										<!--										</div>-->
+									</div>
+									<div class="card-body">
+										<h5 class="card-title fs-4">Javier Crus</h5>
+										<p class="card-text fs-5">Dancing Dreams</p>
+										<!-- 06.02.2024 змінився блок -->
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<p class="card-price fs-2 mb-0">500$</p>
+											<p class=" mb-0">(3 bids)</p>
+										</div>
+										<!-- кожна така кнопка повина ссилатись на свою модалку по ід -->
+										<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
+								<div class="favorite">
+									<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
 									<button class="favorite-btn " type="button">
 										<i class="bi bi-heart-fill"></i>
 									</button>
@@ -65,311 +278,21 @@
 										<div class="marker-leading">
 											Leading
 										</div>
-										<!-- 06.02.2024 показник аукціону Outbid -->
+										<!--  06.02.2024 показник аукціону Outbid -->
 										<!--										<div class="marker-outbid">-->
 										<!--											Outbid-->
 										<!--										</div>-->
 									</div>
 									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
+										<h5 class="card-title fs-4">Javier Crus</h5>
 										<p class="card-text fs-5">Dancing Dreams</p>
 										<!-- 06.02.2024 змінився блок -->
 										<div class="d-flex justify-content-between align-items-center mb-2">
 											<p class="card-price fs-2 mb-0">500$</p>
 											<p class=" mb-0">(3 bids)</p>
 										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
-								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
-									<button class="favorite-btn liked" type="button">
-										<i class="bi bi-heart-fill"></i>
-									</button>
-								</div>
-								<div class="card auction">
-									<div class="carousel carousel-dark slide" data-id="5">
-										<div class="carousel-inner">
-											<a class="carousel-item active" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-										</div>
-										<button class="carousel-control-prev" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-										<!-- 06.02.2024 показник аукціону Leading -->
-										<div class="marker-leading">
-											Leading
-										</div>
-										<!-- 06.02.2024 показник аукціону Outbid -->
-										<!--										<div class="marker-outbid">-->
-										<!--											Outbid-->
-										<!--										</div>-->
-									</div>
-									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
-										<p class="card-text fs-5">Dancing Dreams</p>
-										<!-- 06.02.2024 змінився блок -->
-										<div class="d-flex justify-content-between align-items-center mb-2">
-											<p class="card-price fs-2 mb-0">500$</p>
-											<p class=" mb-0">(3 bids)</p>
-										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
-								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
-									<button class="favorite-btn " type="button">
-										<i class="bi bi-heart-fill"></i>
-									</button>
-								</div>
-								<div class="card auction">
-									<div class="carousel carousel-dark slide" data-id="5">
-										<div class="carousel-inner">
-											<a class="carousel-item active" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-										</div>
-										<button class="carousel-control-prev" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-										<!-- 06.02.2024 показник аукціону Leading -->
-										<!--										<div class="marker-leading">-->
-										<!--											Leading-->
-										<!--										</div>-->
-										<!-- 06.02.2024 показник аукціону Outbid -->
-										<div class="marker-outbid">
-											Outbid
-										</div>
-									</div>
-									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
-										<p class="card-text fs-5">Dancing Dreams</p>
-										<!-- 06.02.2024 змінився блок -->
-										<div class="d-flex justify-content-between align-items-center mb-2">
-											<p class="card-price fs-2 mb-0">500$</p>
-											<p class=" mb-0">(3 bids)</p>
-										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
-								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
-									<button class="favorite-btn " type="button">
-										<i class="bi bi-heart-fill"></i>
-									</button>
-								</div>
-								<div class="card auction">
-									<div class="carousel carousel-dark slide" data-id="5">
-										<div class="carousel-inner">
-											<a class="carousel-item active" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-										</div>
-										<button class="carousel-control-prev" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-										<!-- 06.02.2024 показник аукціону Leading -->
-										<div class="marker-leading">
-											Leading
-										</div>
-										<!-- 06.02.2024 показник аукціону Outbid -->
-										<!--										<div class="marker-outbid">-->
-										<!--											Outbid-->
-										<!--										</div>-->
-									</div>
-									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
-										<p class="card-text fs-5">Dancing Dreams</p>
-										<!-- 06.02.2024 змінився блок -->
-										<div class="d-flex justify-content-between align-items-center mb-2">
-											<p class="card-price fs-2 mb-0">500$</p>
-											<p class=" mb-0">(3 bids)</p>
-										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
-								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
-									<button class="favorite-btn " type="button">
-										<i class="bi bi-heart-fill"></i>
-									</button>
-								</div>
-								<div class="card auction">
-									<div class="carousel carousel-dark slide" data-id="5">
-										<div class="carousel-inner">
-											<a class="carousel-item active" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-										</div>
-										<button class="carousel-control-prev" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-										<!-- 06.02.2024 показник аукціону Leading -->
-										<div class="marker-leading">
-											Leading
-										</div>
-										<!-- 06.02.2024 показник аукціону Outbid -->
-										<!--										<div class="marker-outbid">-->
-										<!--											Outbid-->
-										<!--										</div>-->
-									</div>
-									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
-										<p class="card-text fs-5">Dancing Dreams</p>
-										<!-- 06.02.2024 змінився блок -->
-										<div class="d-flex justify-content-between align-items-center mb-2">
-											<p class="card-price fs-2 mb-0">500$</p>
-											<p class=" mb-0">(3 bids)</p>
-										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide col-12 col-sm-6 col-xl-3">
-								<div class="favorite">
-									<!-- 06.02.2024 клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
-									<button class="favorite-btn " type="button">
-										<i class="bi bi-heart-fill"></i>
-									</button>
-								</div>
-								<div class="card auction">
-									<div class="carousel carousel-dark slide" data-id="5">
-										<div class="carousel-inner">
-											<a class="carousel-item active" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-											<a class="carousel-item" href="#">
-												<img src="./img/image.png" class="card-img-top" alt="">
-											</a>
-										</div>
-										<button class="carousel-control-prev" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-												data-bs-target="[data-id='5']" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-										<!-- 06.02.2024 показник аукціону Leading -->
-										<div class="marker-leading">
-											Leading
-										</div>
-										<!-- 06.02.2024 показник аукціону Outbid -->
-										<!--										<div class="marker-outbid">-->
-										<!--											Outbid-->
-										<!--										</div>-->
-									</div>
-									<div class="card-body">
-										<h5 class="card-title fs-4">
-											<a href="#">
-												Javier Crus
-											</a>
-										</h5>
-										<p class="card-text fs-5">Dancing Dreams</p>
-										<!-- 06.02.2024 змінився блок -->
-										<div class="d-flex justify-content-between align-items-center mb-2">
-											<p class="card-price fs-2 mb-0">500$</p>
-											<p class=" mb-0">(3 bids)</p>
-										</div>
-										<button class="btn btn-success" data-bs-toggle="modal"
-												data-bs-target="#exampleModalToggle20" type="button">Increase bid
-										</button>
+										<!-- кожна така кнопка повина ссилатись на свою модалку по ід -->
+										<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
 									</div>
 								</div>
 							</div>
@@ -398,32 +321,34 @@
 
 <script src="./js/pages/page-slider-lot.min.js"></script>
 <script>
-	const auctionStatusText = document.querySelector('.lot-text-description');
-	const btnReadMore = document.querySelector('[data-id="readMore"]');
+	window.onload = function() {
+		const auctionStatusText = document.querySelector('.lot-text-description');
+		const btnReadMore = document.querySelector('[data-id="readMore"]');
 
-	if (auctionStatusText.scrollHeight > 410) {
-		btnReadMore.classList.add('active');
-	}
-
-	btnReadMore.addEventListener('click', function () {
-		auctionStatusText.classList.toggle('active');
-		if (auctionStatusText.classList.contains('active')) {
-			btnReadMore.innerHTML = 'Read Less <i class="bi bi-chevron-up"></i>';
-		} else {
-			btnReadMore.innerHTML = 'Read More <i class="bi bi-chevron-down"></i>';
+		if (auctionStatusText.scrollHeight > 410) {
+			btnReadMore.classList.add('active');
 		}
-	});
+
+		btnReadMore.addEventListener('click', function() {
+			auctionStatusText.classList.toggle('active');
+			if (auctionStatusText.classList.contains('active')) {
+				btnReadMore.innerHTML = 'Read Less <i class="bi bi-chevron-up"></i>';
+			} else {
+				btnReadMore.innerHTML = 'Read More <i class="bi bi-chevron-down"></i>';
+			}
+		});
+	};
 </script>
 <script>
 	$('.select2-theme').select2({
 		minimumResultsForSearch: -1,
-		placeholder: "Subject",
+		placeholder: "Theme",
 	});
 	$('.select2-modal-wrapper').select2({
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
 	});
-	<!-- 06.02.2024 ініціалізація select2 для модалки ставки -->
+	<!-- 06.02.2024 -->
 	$('.mySelect-increase').select2({
 		minimumResultsForSearch: -1,
 	});

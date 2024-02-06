@@ -115,21 +115,20 @@ span.nav-link:hover {
 
 .bag-count {
   position: absolute;
-  padding: 3px 4px;
+  padding: 0 4px;
   color: #291F0F;
-  font-size: 16px;
-  line-height: 165.5%;
+  font-size: 14px;
   display: block;
   min-width: 18px;
   height: 18px;
+  line-height: 115%;
   text-align: center;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  left: 50%;
-  top: 42%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  border: 1px solid #291F0F;
+  background-color: #EDE8E3;
+  top: 10px;
+  right: 0;
 }
 
 .contact-title {
@@ -297,6 +296,51 @@ button.btn {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   grid-gap: 12px !important;
+}
+
+.marker-leading,
+.marker-outbid {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 165%;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.marker-leading {
+  background-color: #035055;
+}
+
+.marker-outbid {
+  background-color: #BF1616;
+}
+
+.favorite {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 10;
+}
+
+.favorite-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.favorite-btn.liked i {
+  color: #BF1616;
+}
+
+.favorite-btn i {
+  color: #035055;
+}
+
+.favorite-btn:hover i {
+  color: #BF1616;
 }
 
 .card-price-text {
@@ -666,6 +710,19 @@ button.btn {
   opacity: 1;
 }
 
+.modal-content.increase {
+  height: auto;
+}
+
+.modal-content.increase .modal-body {
+  margin-top: 0;
+  padding: 0 30px 16px;
+}
+
+.modal-content.increase .modal-body-title {
+  margin-top: 0;
+}
+
 .modal-header {
   border-bottom: none;
   position: relative;
@@ -827,6 +884,14 @@ button.btn {
   font-size: 2rem;
   color: #291F0F;
   margin-bottom: 12px;
+}
+
+.modal-body a.modal-body-text {
+  color: #056B72;
+}
+
+.modal-body a.modal-body-text:hover {
+  color: #05868E;
 }
 
 .modal-body-text {
@@ -1067,6 +1132,10 @@ button.btn {
 
   header .entered span {
     font-size: 1.125rem;
+  }
+
+  .bag-count {
+    right: -10px;
   }
 
   .modal-content .bg-modal {

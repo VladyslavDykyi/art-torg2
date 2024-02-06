@@ -14,6 +14,54 @@ button.btn {
 	justify-content: center !important;
 	grid-gap: 12px !important;
 }
+.marker-leading,
+.marker-outbid {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 165%;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.marker-leading {
+	background-color: #035055;
+}
+
+.marker-outbid {
+	background-color: #BF1616;
+}
+
+.favorite {
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	z-index: 10;
+
+	&-btn {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+
+		&.liked {
+			& i {
+				color: #BF1616;
+			}
+		}
+
+		& i {
+			color: #035055;
+		}
+
+		&:hover {
+			& i {
+				color: #BF1616;
+			}
+		}
+	}
+}
 .card-price-text {
 	white-space: nowrap;
 }

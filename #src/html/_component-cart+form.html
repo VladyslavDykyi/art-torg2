@@ -1,5 +1,12 @@
 <div class=" col-12 col-sm-6 col-xl-3">
 	<div class="card auction">
+		<!-- 06.02.2024 кнопка для обирання фавориту -->
+		<div class="favorite">
+			<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+			<button class="favorite-btn liked" type="button">
+				<i class="bi bi-heart-fill"></i>
+			</button>
+		</div>
 		<div class="carousel carousel-dark slide" data-id="17">
 			<div class="carousel-inner">
 				<a class="carousel-item active" href="#">
@@ -22,6 +29,14 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
+			<!-- 06.02.2024 показник аукціону Leading -->
+			<!-- <div class="marker-leading"> -->
+			<!-- Leading -->
+			<!-- </div> -->
+			<!--06.02.2024 показник аукціону Outbid -->
+			<div class="marker-outbid">
+				Outbid
+			</div>
 		</div>
 		<div class="card-body">
 			<div class="card-info d-flex justify-content-between align-items-center">
@@ -34,14 +49,12 @@
 				</a>
 			</h5>
 			<p class="card-text fs-6">Dancing Dreams</p>
-			<form class="card-form" action="#">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Enter 600£ or more">
-					<!--									<a class="btn btn-success" href="#">Register to Bid</a>-->
-					<button class="btn btn-success" type="submit">Place a Bid</button>
-					<!--									чи посилання на рег чи кнопка-->
-				</div>
-			</form>
+			<!-- 31.01.2024 змінився блок -->
+			<div class="d-flex justify-content-between align-items-center mb-2">
+				<p class="card-price fs-2 mb-0">500$</p>
+				<p class=" mb-0">(3 bids)</p>
+			</div>
+			<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Increase bid</button>
 		</div>
 	</div>
 </div>

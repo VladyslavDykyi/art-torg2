@@ -74,7 +74,20 @@
 		line-height: 150%;
 		margin-bottom: 8px;
 	}
-
+	&-info-bid {
+		color: #5F5F5F;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		&.red {
+			color: #CF331E;
+		}
+		&.green {
+			color: #056B72;
+		}
+		&.grey {
+			color: #6F6F6F;
+		}
+	}
 	&-btn-buy {
 		width: 100%;
 		margin-bottom: 32px;
