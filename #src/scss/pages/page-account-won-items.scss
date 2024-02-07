@@ -10,11 +10,11 @@
 }
 .personal-data {
 	&-links {
-		max-width: 600px;
+		justify-content: center;
 		width: 100%;
 		padding-bottom: 20px;
 		& a.btn {
-			max-width: 200px;
+			width: max-content;
 			color: #6F6F6F;
 			border-radius: 4px;
 			font-size: 1.25rem;
