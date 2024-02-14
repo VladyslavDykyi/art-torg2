@@ -5,24 +5,8 @@
 @import "_modal";
 @import "_select2";
 @import "_default";
-.personal-data {
-	&-links {
-		justify-content: center;
-		width: 100%;
-		padding-bottom: 20px;
-		& a.btn {
-			width: max-content;
-			color: #6F6F6F;
-			border-radius: 4px;
-			font-size: 1.25rem;
-			padding: .688rem .75rem;
-			@media screen and (max-width: 768px) {
-				font-size: 1rem;
-				padding: .35rem;
-			}
-		}
-	}
-}
+@import "_page-account-personal-data-links";
+
 .message {
 	@media screen and (max-width: 768px) {
 		margin-bottom: 24px;

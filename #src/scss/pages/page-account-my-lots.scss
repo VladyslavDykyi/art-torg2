@@ -4,6 +4,7 @@
 @import "_default";
 @import "_select2";
 @import "_modal";
+@import "_page-account-personal-data-links";
 .card {
 	border: none;
 	height: 100%;
@@ -62,22 +63,6 @@
 .personal-data {
 	& hr {
 		margin: .75rem 0 1.5rem;
-	}
-	&-links {
-		justify-content: center;
-		width: 100%;
-		padding-bottom: 20px;
-		& a.btn {
-			width: max-content;
-			color: #6F6F6F;
-			border-radius: 4px;
-			font-size: 1.25rem;
-			padding: .688rem .75rem;
-			@media screen and (max-width: 768px) {
-				font-size: 1rem;
-				padding: .35rem;
-			}
-		}
 	}
 	&-inputs {
 		& .btn.btn-success {

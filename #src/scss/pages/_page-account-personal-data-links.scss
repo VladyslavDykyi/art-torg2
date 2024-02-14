@@ -1,0 +1,35 @@
+.personal-data {
+	&-links {
+		justify-content: center;
+		width: auto;
+		padding-bottom: 20px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			width: 100%;
+		}
+		& a.btn {
+			width: fit-content;
+			color: #6F6F6F;
+			border-radius: 4px;
+			font-size: 1.25rem;
+			padding: .688rem .75rem;
+			white-space: nowrap;
+			@media screen and (max-width: 768px) {
+				font-size: 1rem;
+				padding: .35rem;
+				width: 100%;
+				margin-left: 0 !important;
+			}
+			&:first-child {
+				@media screen and (max-width: 768px) {
+					border-radius: 4px 4px 0 0 !important;
+				}
+			}
+			&:last-child {
+				@media screen and (max-width: 768px) {
+					border-radius: 0 0 4px 4px !important;
+				}
+			}
+		}
+	}
+}

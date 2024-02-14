@@ -4,7 +4,7 @@
 @import "_default";
 @import "_modal";
 @import "_select2";
-
+@import "_page-account-personal-data-links";
 .personal-data {
 	& hr {
 		margin: .75rem 0 1.5rem;
@@ -19,22 +19,7 @@
 			max-width: 180px;
 		}
 	}
-	&-links {
-		justify-content: center;
-		width: 100%;
-		padding-bottom: 20px;
-		& a.btn {
-			width: max-content;
-			color: #5F5F5F;
-			font-size: 1.25rem;
-			padding: .688rem .75rem;
-			border-radius: 0;
-			@media screen and (max-width: 768px) {
-				font-size: 1rem;
-				padding: .35rem;
-			}
-		}
-	}
+
 	&-inputs {
 		& .inp {
 			background-color: #EDE8E3;

@@ -948,21 +948,20 @@ button.btn {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: auto;
   padding-bottom: 20px;
 }
 
 .personal-data-links a.btn {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #6F6F6F;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   font-size: 1.25rem;
   padding: .688rem .75rem;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  white-space: nowrap;
 }
 
 .form-check #checkAllMessages + .form-check-label:after {
@@ -1384,9 +1383,30 @@ button.btn {
     padding: 0.68rem;
   }
 
+  .personal-data-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
   .personal-data-links a.btn {
-    font-size: .75rem;
+    font-size: 1rem;
     padding: .35rem;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .personal-data-links a.btn:first-child {
+    -webkit-border-radius: 4px 4px 0 0 !important;
+            border-radius: 4px 4px 0 0 !important;
+  }
+
+  .personal-data-links a.btn:last-child {
+    -webkit-border-radius: 0 0 4px 4px !important;
+            border-radius: 0 0 4px 4px !important;
   }
 
   .list-messages-body-item .item-name p,

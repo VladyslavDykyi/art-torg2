@@ -910,6 +910,27 @@ button.btn {
   border-width: 0 4px 5px 4px;
 }
 
+.personal-data-links {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.personal-data-links a.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #6F6F6F;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 1.25rem;
+  padding: .688rem .75rem;
+  white-space: nowrap;
+}
+
 .personal-data hr {
   margin: .75rem 0 1.5rem;
 }
@@ -931,26 +952,6 @@ button.btn {
 
 .personal-data-save > .btn-auction {
   max-width: 180px;
-}
-
-.personal-data-links {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.personal-data-links a.btn {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  color: #5F5F5F;
-  font-size: 1.25rem;
-  padding: .688rem .75rem;
-  -webkit-border-radius: 0;
-          border-radius: 0;
 }
 
 .personal-data-inputs .inp {
@@ -1241,9 +1242,30 @@ button.btn {
     padding: 0.68rem;
   }
 
+  .personal-data-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
   .personal-data-links a.btn {
     font-size: 1rem;
     padding: .35rem;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .personal-data-links a.btn:first-child {
+    -webkit-border-radius: 4px 4px 0 0 !important;
+            border-radius: 4px 4px 0 0 !important;
+  }
+
+  .personal-data-links a.btn:last-child {
+    -webkit-border-radius: 0 0 4px 4px !important;
+            border-radius: 0 0 4px 4px !important;
   }
 
   .personal-data .inputs-wrapper .btn.btn-input.dropdown-toggle.show,
