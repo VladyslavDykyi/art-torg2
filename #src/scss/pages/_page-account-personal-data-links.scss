@@ -1,14 +1,14 @@
 .personal-data {
 	&-links {
 		justify-content: center;
-		width: auto;
+		width: 100%;
 		padding-bottom: 20px;
 		@media screen and (max-width: 768px) {
 			flex-direction: column;
 			width: 100%;
 		}
 		& a.btn {
-			width: fit-content;
+			width: 100%;
 			color: #6F6F6F;
 			border-radius: 4px;
 			font-size: 1.25rem;
